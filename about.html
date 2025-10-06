@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EducateWell</title>
+    <meta name="description" content="Learn about EducateWell's mission to provide comprehensive, evidence-based sex education and health awareness resources.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div id="ageModal" class="modal-overlay">
+        <div class="modal">
+            <h2>Age Verification</h2>
+            <p>This website contains educational information about sexual health and relationships. Please confirm you are at least 18 years old or have parental consent to continue.</p>
+            <div class="modal-btns">
+                <button id="confirmAge" class="btn btn-accent">I am 18 or older</button>
+                <button id="exitSite" class="btn btn-outline">Exit</button>
+            </div>
+            <div class="disclaimer" style="margin-top: 1rem; font-size: 0.8rem;">
+                <p><strong>Important:</strong> This site provides educational information only and is not a substitute for professional medical advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crisis Resources Banner -->
+    <div class="crisis-banner">
+        <div class="container">
+            <p><strong>Need immediate help?</strong> Call the National Sexual Assault Hotline: <a href="tel:1-800-656-4673">1-800-656-HOPE</a> or the Suicide Prevention Lifeline: <a href="tel:988">988</a></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">EW</div>
+                <a href="index.html" style="text-decoration: none;"><h1>Educate<span>Well</span></h1></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="foundations.html">Foundations</a></li>
+                    <li><a href="relationships.html">Relationships</a></li>
+                    <li><a href="prevention.html">Prevention</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>About EducateWell</h1>
+                <p>Our mission to provide accurate, inclusive, and evidence-based sexual health education for everyone.</p>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Mission & Vision</h2>
+                    <p>Creating a world where everyone has access to comprehensive sexual health education</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>🎯 Our Mission</h3>
+                            <p>EducateWell is dedicated to providing comprehensive, evidence-based sexual health education in a safe, inclusive, and accessible format. We believe that accurate information empowers individuals to make informed decisions about their health, relationships, and well-being.</p>
+                            <p>Our mission is to break down barriers to sexual health information and create a supportive environment where people of all ages, backgrounds, and identities can learn and grow.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>🔭 Our Vision</h3>
+                            <p>We envision a world where comprehensive sex education is accessible to all, where individuals feel empowered to make healthy choices, and where conversations about sexual health are normalized and destigmatized.</p>
+                            <p>We strive to create a future where everyone has the knowledge and resources they need to build healthy relationships, protect their well-being, and live fulfilling lives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>💡 Our Values</h3>
+                            <ul class="card-features">
+                                <li><strong>Evidence-Based:</strong> All information is grounded in scientific research and medical best practices</li>
+                                <li><strong>Inclusive:</strong> Content that respects and represents diverse identities and experiences</li>
+                                <li><strong>Accessible:</strong> Information presented in clear, understandable language for all ages</li>
+                                <li><strong>Non-Judgmental:</strong> A safe space free from shame or stigma</li>
+                                <li><strong>Empowering:</strong> Education that builds confidence and self-advocacy skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Accuracy -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Content Accuracy & Review Process</h2>
+                    <p>Ensuring our information is reliable, current, and medically accurate</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>🔬 Our Review Process</h3>
+                        <p>All content on EducateWell undergoes a rigorous review process to ensure accuracy and reliability:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                            <div>
+                                <h4 style="color: var(--accent-green);">Research-Based</h4>
+                                <ul class="card-features">
+                                    <li>Peer-reviewed medical literature</li>
+                                    <li>Government health guidelines (CDC, WHO)</li>
+                                    <li>Professional medical associations</li>
+                                    <li>Current scientific consensus</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--secondary-blue);">Regular Updates</h4>
+                                <ul class="card-features">
+                                    <li>Quarterly content reviews</li>
+                                    <li>Medical guideline updates</li>
+                                    <li>New research integration</li>
+                                    <li>User feedback implementation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--accent-purple);">Expert Consultation</h4>
+                                <ul class="card-features">
+                                    <li>Medical professionals review</li>
+                                    <li>Mental health experts input</li>
+                                    <li>Education specialists guidance</li>
+                                    <li>Community feedback integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="disclaimer">
+                            <p><strong>Content Review Schedule:</strong> All medical information is reviewed quarterly. Emergency resources and crisis information are updated monthly. Last comprehensive review: <strong id="lastReviewDate">October 2023</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-grid" style="margin-top: 2rem;">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>🏥 Trusted Sources</h3>
+                            <p>We rely on information from reputable organizations including:</p>
+                            <ul class="card-features">
+                                <li>World Health Organization (WHO)</li>
+                                <li>Centers for Disease Control (CDC)</li>
+                                <li>American Academy of Pediatrics</li>
+                                <li>American College of Obstetricians and Gynecologists</li>
+                                <li>American Psychological Association</li>
+                                <li>Planned Parenthood Federation</li>
+                                <li>SIECUS: Sex Ed for Social Change</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>📝 Content Guidelines</h3>
+                            <p>Our editorial standards ensure quality and reliability:</p>
+                            <ul class="card-features">
+                                <li>Age-appropriate information levels</li>
+                                <li>Culturally sensitive content</li>
+                                <li>LGBTQ+ inclusive language</li>
+                                <li>Clear sourcing and citations</li>
+                                <li>Plain language explanations</li>
+                                <li>Visual accessibility standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy & Safety -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Privacy & Safety Commitment</h2>
+                    <p>Your safety and privacy are our top priorities</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>🔒 Privacy Protection</h3>
+                            <p>We are committed to protecting your privacy and personal information:</p>
+                            <ul class="card-features">
+                                <li>No personal data collection without consent</li>
+                                <li>Anonymous browsing options</li>
+                                <li>Secure website protocols (HTTPS)</li>
+                                <li>No tracking of sensitive health information</li>
+                                <li>Clear privacy policy transparency</li>
+                            </ul>
+                            <a href="privacy.html" class="btn">View Privacy Policy</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>🛡️ Safety Features</h3>
+                            <p>Multiple layers of protection for our users:</p>
+                            <ul class="card-features">
+                                <li>Age-appropriate content gates</li>
+                                <li>Crisis resource prominence</li>
+                                <li>Clear medical disclaimers</li>
+                                <li>Professional referral guidance</li>
+                                <li>Emergency contact accessibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>📞 Emergency Preparedness</h3>
+                            <p>We ensure immediate help is always accessible:</p>
+                            <ul class="card-features">
+                                <li>Crisis hotlines on every page</li>
+                                <li>Clear emergency instructions</li>
+                                <li>Local resource directories</li>
+                                <li>Step-by-step crisis guidance</li>
+                                <li>24/7 available resources</li>
+                            </ul>
+                            <a href="resources.html" class="btn btn-emergency">Emergency Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Feedback -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact & Feedback</h2>
+                    <p>We value your input and are here to help</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>📧 Get In Touch</h3>
+                            <p>We welcome your questions, feedback, and suggestions:</p>
+                            <ul class="card-features">
+                                <li><strong>General Inquiries:</strong> info@educatewell.org</li>
+                                <li><strong>Content Feedback:</strong> content@educatewell.org</li>
+                                <li><strong>Technical Support:</strong> support@educatewell.org</li>
+                                <li><strong>Partnerships:</strong> partnerships@educatewell.org</li>
+                            </ul>
+                            <div class="disclaimer" style="margin-top: 1rem; font-size: 0.8rem;">
+                                <p><strong>Response Time:</strong> We aim to respond to all inquiries within 2-3 business days. For urgent matters, please use the emergency resources provided.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>💬 Provide Feedback</h3>
+                            <p>Help us improve our resources and services:</p>
+                            <ul class="card-features">
+                                <li>Content accuracy reports</li>
+                                <li>User experience feedback</li>
+                                <li>Resource suggestions</li>
+                                <li>Accessibility concerns</li>
+                                <li>General comments and ideas</li>
+                            </ul>
+                            <p>Your feedback helps us create better educational materials and serve our community more effectively.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>🤝 Partnerships</h3>
+                            <p>Interested in collaborating with EducateWell?</p>
+                            <p>We partner with:</p>
+                            <ul class="card-features">
+                                <li>Educational institutions</li>
+                                <li>Healthcare organizations</li>
+                                <li>Community centers</li>
+                                <li>Non-profit organizations</li>
+                                <li>Youth programs</li>
+                            </ul>
+                            <p>Contact our partnerships team to discuss collaboration opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Disclaimer -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="disclaimer">
+                    <p><strong>Important Medical Disclaimer:</strong> The information provided on EducateWell is for educational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on this website.</p>
+                    <p style="margin-top: 1rem;"><strong>Emergency Situations:</strong> If you think you may have a medical emergency, call your doctor or 911 immediately. EducateWell does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on the website.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EducateWell</h3>
+                    <p>Providing comprehensive, evidence-based sex education and health awareness resources.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="foundations.html">Foundations</a></li>
+                        <li><a href="relationships.html">Relationships</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Crisis Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:1-800-656-4673">Sexual Assault Hotline</a></li>
+                        <li><a href="tel:988">Suicide Prevention</a></li>
+                        <li><a href="tel:1-866-488-7386">The Trevor Project</a></li>
+                        <li><a href="tel:1-800-799-7233">Domestic Violence Hotline</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 EducateWell. All rights reserved. This site is for educational purposes only.</p>
+                <p>Last updated: <span id="lastUpdated"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/age-verification.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Set the last review date
+        document.getElementById('lastReviewDate').textContent = new Date().toLocaleDateString('en-US', { 
+            month: 'long', 
+            year: 'numeric' 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevention & Protection - EducateWell</title>
+    <meta name="description" content="Learn about contraception methods, STI prevention, and reproductive health care with evidence-based information.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div id="ageModal" class="modal-overlay">
+        <div class="modal">
+            <h2>Age Verification</h2>
+            <p>This website contains educational information about sexual health and relationships. Please confirm you are at least 18 years old or have parental consent to continue.</p>
+            <div class="modal-btns">
+                <button id="confirmAge" class="btn btn-accent">I am 18 or older</button>
+                <button id="exitSite" class="btn btn-outline">Exit</button>
+            </div>
+            <div class="disclaimer" style="margin-top: 1rem; font-size: 0.8rem;">
+                <p><strong>Important:</strong> This site provides educational information only and is not a substitute for professional medical advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crisis Resources Banner -->
+    <div class="crisis-banner">
+        <div class="container">
+            <p><strong>Need immediate help?</strong> Call the National Sexual Assault Hotline: <a href="tel:1-800-656-4673">1-800-656-HOPE</a> or the Suicide Prevention Lifeline: <a href="tel:988">988</a></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">EW</div>
+                <a href="index.html" style="text-decoration: none;"><h1>Educate<span>Well</span></h1></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="foundations.html">Foundations</a></li>
+                    <li><a href="relationships.html">Relationships</a></li>
+                    <li><a href="prevention.html" class="active">Prevention</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Prevention & Protection</h1>
+                <p>Evidence-based information about contraception, STI prevention, and reproductive health care.</p>
+            </div>
+        </section>
+
+        <!-- Contraception Methods -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contraception Methods</h2>
+                    <p>Understanding different birth control options and their effectiveness</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-img">
+                            💊
+                        </div>
+                        <div class="card-content">
+                            <h3>Hormonal Methods</h3>
+                            <p>Birth control that uses hormones to prevent pregnancy.</p>
+                            <ul class="card-features">
+                                <li>Birth control pills</li>
+                                <li>Patches and rings</li>
+                                <li>Injections (Depo-Provera)</li>
+                                <li>Implants and IUDs</li>
+                            </ul>
+                            <p><strong>Effectiveness:</strong> 91-99% with perfect use</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            🛡️
+                        </div>
+                        <div class="card-content">
+                            <h3>Barrier Methods</h3>
+                            <p>Physical barriers that prevent sperm from reaching eggs.</p>
+                            <ul class="card-features">
+                                <li>Condoms (male and female)</li>
+                                <li>Diaphragms and cervical caps</li>
+                                <li>Spermicides</li>
+                                <li>Dental dams</li>
+                            </ul>
+                            <p><strong>Effectiveness:</strong> 72-98% with perfect use</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            📅
+                        </div>
+                        <div class="card-content">
+                            <h3>Long-Acting & Permanent</h3>
+                            <p>Methods that provide long-term or permanent protection.</p>
+                            <ul class="card-features">
+                                <li>IUDs (hormonal and copper)</li>
+                                <li>Implants (Nexplanon)</li>
+                                <li>Vasectomy</li>
+                                <li>Tubal ligation</li>
+                            </ul>
+                            <p><strong>Effectiveness:</strong> Over 99%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Effectiveness Table -->
+                <div class="card" style="margin-top: 2rem;">
+                    <div class="card-content">
+                        <h3>Contraception Effectiveness Comparison</h3>
+                        <div style="overflow-x: auto;">
+                            <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                                <thead>
+                                    <tr style="background-color: var(--light-gray);">
+                                        <th style="padding: 12px; text-align: left; border: 1px solid var(--medium-gray);">Method</th>
+                                        <th style="padding: 12px; text-align: center; border: 1px solid var(--medium-gray);">Perfect Use</th>
+                                        <th style="padding: 12px; text-align: center; border: 1px solid var(--medium-gray);">Typical Use</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid var(--medium-gray);">Implant</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">99%</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">99%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid var(--medium-gray);">IUD</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">99%</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">99%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid var(--medium-gray);">Birth Control Pill</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">99%</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">91%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid var(--medium-gray);">Condom</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">98%</td>
+                                        <td style="padding: 10px; text-align: center; border: 1px solid var(--medium-gray);">82%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-light);"><em>Source: CDC - Perfect use means always using the method correctly. Typical use reflects real-world effectiveness.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STI Prevention -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>STI Prevention & Information</h2>
+                    <p>Understanding sexually transmitted infections and how to prevent them</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Common STIs</h3>
+                            <p>Information about frequently encountered sexually transmitted infections.</p>
+                            <ul class="card-features">
+                                <li><strong>Chlamydia:</strong> Bacterial infection, often asymptomatic</li>
+                                <li><strong>Gonorrhea:</strong> Bacterial infection, can cause serious complications</li>
+                                <li><strong>HIV:</strong> Viral infection affecting immune system</li>
+                                <li><strong>HPV:</strong> Common virus, some strains can cause cancer</li>
+                                <li><strong>Herpes:</strong> Viral infection causing sores</li>
+                                <li><strong>Syphilis:</strong> Bacterial infection with multiple stages</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Prevention Strategies</h3>
+                            <p>Effective ways to reduce STI transmission risk.</p>
+                            <ul class="card-features">
+                                <li>Consistent condom use</li>
+                                <li>Regular STI testing</li>
+                                <li>Vaccinations (HPV, Hepatitis B)</li>
+                                <li>Mutual monogamy</li>
+                                <li>Open communication with partners</li>
+                                <li>Pre-Exposure Prophylaxis (PrEP) for HIV</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Testing Information</h3>
+                            <p>When and how to get tested for STIs.</p>
+                            <ul class="card-features">
+                                <li>Recommended testing frequency</li>
+                                <li>Types of tests available</li>
+                                <li>Confidential testing locations</li>
+                                <li>At-home testing options</li>
+                                <li>Insurance coverage and costs</li>
+                                <li>Partner notification services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reproductive Health -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Reproductive Health</h2>
+                    <p>Comprehensive care for reproductive and sexual health throughout life</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-img">
+                            🔄
+                        </div>
+                        <div class="card-content">
+                            <h3>Menstrual Health</h3>
+                            <p>Understanding and managing menstrual cycles and related health.</p>
+                            <ul class="card-features">
+                                <li>Normal cycle patterns</li>
+                                <li>Managing period symptoms</li>
+                                <li>Menstrual products overview</li>
+                                <li>When to seek medical help</li>
+                                <li>Conditions like PCOS and endometriosis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            📈
+                        </div>
+                        <div class="card-content">
+                            <h3>Fertility Awareness</h3>
+                            <p>Understanding fertility and reproductive health across the lifespan.</p>
+                            <ul class="card-features">
+                                <li>How conception works</li>
+                                <li>Fertility tracking methods</li>
+                                <li>Age and fertility factors</li>
+                                <li>When to consider fertility evaluation</li>
+                                <li>Fertility preservation options</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            🏥
+                        </div>
+                        <div class="card-content">
+                            <h3>Preventive Care</h3>
+                            <p>Routine healthcare for maintaining reproductive health.</p>
+                            <ul class="card-features">
+                                <li>Regular check-ups and exams</li>
+                                <li>Cancer screenings (pap smears, etc.)</li>
+                                <li>Vaccinations and immunizations</li>
+                                <li>Breast and testicular self-exams</li>
+                                <li>Mental health considerations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contraception -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Emergency Contraception</h2>
+                    <p>Options for preventing pregnancy after unprotected sex</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Emergency Contraception Pills</h3>
+                            <p>Also known as "morning after pills."</p>
+                            <ul class="card-features">
+                                <li><strong>Levonorgestrel pills:</strong> Effective up to 72 hours</li>
+                                <li><strong>Ulipristal acetate:</strong> Effective up to 120 hours</li>
+                                <li><strong>Availability:</strong> Over-the-counter or prescription</li>
+                                <li><strong>Effectiveness:</strong> Higher when taken sooner</li>
+                            </ul>
+                            <p><strong>Important:</strong> Emergency contraception prevents pregnancy but does not protect against STIs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Copper IUD</h3>
+                            <p>The most effective form of emergency contraception.</p>
+                            <ul class="card-features">
+                                <li><strong>Effectiveness:</strong> Over 99%</li>
+                                <li><strong>Timeframe:</strong> Up to 5 days after unprotected sex</li>
+                                <li><strong>Additional benefit:</strong> Provides ongoing contraception</li>
+                                <li><strong>Requires:</strong> Healthcare provider insertion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Care -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Getting Healthcare</h2>
+                    <p>How to access reproductive and sexual health services</p>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Finding Providers</h3>
+                            <ul class="card-features">
+                                <li>Primary care physicians</li>
+                                <li>Gynecologists and urologists</li>
+                                <li>Planned Parenthood clinics</li>
+                                <li>Community health centers</li>
+                                <li>School-based health centers</li>
+                                <li>Telehealth options</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Cost & Insurance</h3>
+                            <ul class="card-features">
+                                <li>Insurance coverage information</li>
+                                <li>Affordable Care Act benefits</li>
+                                <li>Sliding scale fees</li>
+                                <li>Free and low-cost clinics</li>
+                                <li>Patient assistance programs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Your Rights</h3>
+                            <ul class="card-features">
+                                <li>Confidentiality rights</li>
+                                <li>Consent for treatment</li>
+                                <li>Access to information</li>
+                                <li>Non-discrimination protections</li>
+                                <li>Reproductive rights</li>
+                            </ul>
+                            <a href="resources.html" class="btn">More About Your Rights</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EducateWell</h3>
+                    <p>Providing comprehensive, evidence-based sex education and health awareness resources.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="foundations.html">Foundations</a></li>
+                        <li><a href="relationships.html">Relationships</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Crisis Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:1-800-656-4673">Sexual Assault Hotline</a></li>
+                        <li><a href="tel:988">Suicide Prevention</a></li>
+                        <li><a href="tel:1-866-488-7386">The Trevor Project</a></li>
+                        <li><a href="tel:1-800-799-7233">Domestic Violence Hotline</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 EducateWell. All rights reserved. This site is for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/age-verification.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
