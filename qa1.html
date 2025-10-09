@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EducateWell — Frequently Asked Questions (Safe Q&amp;A)</title>
+  <meta name="description" content="Frequently asked questions about puberty, consent, safe sex, contraception, STIs, relationships and LGBTQ+ topics — short, evidence-based, non-explicit answers for learners of all ages.">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- FAQ structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": []
+  }
+  </script>
+
+  <style>
+    /* Small page-specific styles so this file renders even if CSS files are missing */
+    :root{--accent:#2b8aef;--muted:#6b7280;--bg:#fff}
+    body{background:var(--bg);font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#1f2937;margin:0}
+    .container{width:90%;max-width:980px;margin:0 auto;padding:2.5rem 0}
+    h1{font-size:clamp(1.6rem,3.8vw,2.4rem);margin-bottom:.5rem;color:var(--accent)}
+    p.lead{color:var(--muted);margin-bottom:1.5rem}
+    .faq-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+    @media(min-width:780px){.faq-grid{grid-template-columns:1fr 1fr}}
+    .qa{background:#f9fafb;border:1px solid rgba(15,23,42,.04);border-radius:10px;padding:1rem}
+    .q{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .q h3{font-size:1rem;margin:0}
+    .a{margin-top:.75rem;display:none;color:#111827;line-height:1.6}
+    .meta{font-size:.85rem;color:var(--muted)}
+    .search{margin-bottom:1.25rem;display:flex;gap:.5rem}
+    .search input{flex:1;padding:.8rem 1rem;border-radius:8px;border:1px solid #e5e7eb}
+    .btn{background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:8px;border:none;cursor:pointer}
+    .small{font-size:.9rem;color:var(--muted)}
+    .disclaimer{margin-top:1.25rem;padding:1rem;border-left:4px solid #f59e0b;background:#fff7ed;border-radius:6px;color:#92400e}
+    .tags{margin-top:.75rem}
+    .tag{display:inline-block;padding:.25rem .5rem;background:#eef2ff;color:#3730a3;border-radius:999px;margin-right:.5rem;font-size:.8rem}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+      <div>
+        <div style="font-weight:800;color:var(--accent)">Educate<span style="color:#10b981">Well</span></div>
+        <div class="small">Safe, non-judgmental answers to common questions</div>
+      </div>
+      <nav>
+        <a href="./index.html" class="small" style="color:var(--muted);text-decoration:none">Home</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <h1>Common Questions — Short, Safe Answers</h1>
+      <p class="lead">Below are questions people ask most. Answers are educational, non-explicit, and based on public health guidance. If your question is an emergency, please contact local health services or a crisis line.</p>
+
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Search questions (try: consent, pregnancy, STI)">
+        <button id="clearBtn" class="btn" type="button">Clear</button>
+      </div>
+
+      <div class="disclaimer">
+        <strong>Note:</strong> This page provides general information only. It is not a substitute for professional medical, legal, or mental health advice. For personalised care, consult a qualified provider.
+      </div>
+
+      <section class="faq-grid" id="faqGrid">
+
+        <!-- Questions will be injected here by script -->
+
+      </section>
+
+      <div style="margin-top:1.5rem">
+        <p class="small">Want to ask anonymously? <a href="/ask.html">Submit a question</a> — we moderate and respond with safe answers.</p>
+        <div class="tags" aria-hidden="false">
+          <span class="tag">Consent</span>
+          <span class="tag">Puberty</span>
+          <span class="tag">Contraception</span>
+          <span class="tag">STI</span>
+          <span class="tag">Relationships</span>
+        </div>
+      </div>
+
+    </main>
+
+    <footer style="margin-top:2.5rem;border-top:1px solid #eef2f6;padding-top:1.25rem">
+      <p class="small">&copy; 2025 EducateWell. This site provides educational information only.</p>
+      <p class="small">Last updated: <span id="lastUpdated"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    // Last updated
+    document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+
+    // Core Q&A data (safe, non-explicit answers). Keep this list concise and evidence-based.
+    const qaList = [
+      {q: "What is consent?", a: "Consent means everyone involved freely agrees to an activity without pressure or coercion. It can be withdrawn at any time; clear, enthusiastic consent is always required." , tags:["Consent"]},
+      {q: "How do I know if I am in love or just infatuated?", a: "Love often includes care, respect, and long-term commitment; infatuation is more about intense attraction or idealising someone. Healthy relationships include communication and mutual support.", tags:["Relationships"]},
+      {q: "What changes happen during puberty?", a: "Puberty brings physical and emotional changes like growth spurts, body hair, voice changes, and mood swings. Timing varies for everyone and is a normal part of development.", tags:["Puberty"]},
+      {q: "Is masturbation normal and healthy?", a: "Masturbation is a common, normal behaviour for many people and is considered a safe way to explore your body. It only becomes a problem if it interferes with daily life or responsibilities.", tags:["Myths"]},
+      {q: "Can you get pregnant the first time you have sex?", a: "Yes. Pregnancy can occur any time sperm reaches an egg, even during the first sexual encounter. Using reliable contraception lowers the risk of unintended pregnancy.", tags:["Pregnancy","Contraception"]},
+      {q: "What contraceptive options exist?", a: "Options include condoms, oral contraceptives (the pill), injectables, implants, IUDs, and emergency contraception. Each has pros and cons—talk to a healthcare provider to find what suits you.", tags:["Contraception"]},
+      {q: "How effective are condoms?", a: "When used correctly, condoms significantly reduce the risk of pregnancy and many STIs. They are not 100% effective but are one of the best available barrier methods.", tags:["Prevention"]},
+      {q: "What are STIs and how are they prevented?", a: "STIs (sexually transmitted infections) are infections spread through sexual contact. Prevention includes consistent condom use, routine testing, vaccination (e.g., HPV), and open communication with partners.", tags:["STI"]},
+      {q: "Is it okay to be attracted to the same sex or more than one gender?", a: "Yes. Sexual orientation and attraction vary across people. Being attracted to the same sex, different sexes, or multiple genders is part of natural human diversity.", tags:["LGBTQ+"]},
+      {q: "What is the difference between sex and gender?", a: "Sex typically refers to biological attributes (like anatomy and chromosomes), while gender refers to social roles, identity, and expression. Both exist on spectrums and can differ for each person.", tags:["Education"]},
+      {q: "What should I do after unprotected sex?", a: "Consider emergency contraception if pregnancy is a concern and seek STI testing. Contact a healthcare provider or clinic promptly for guidance.", tags:["Safety"]},
+      {q: "How do I talk to a partner about boundaries?", a: "Choose a calm time, be clear about your needs, listen actively, and respect the other person's response. Boundaries are personal and should be mutually negotiated.", tags:["Relationships"]},
+      {q: "Is porn a reliable source of sex education?", a: "No. Pornography is entertainment and often shows unrealistic or unsafe behaviours. Use trusted educational resources or health providers for accurate information.", tags:["Media"]},
+      {q: "What is sexual harassment and how do I report it?", a: "Sexual harassment is unwanted sexual behaviour that makes someone uncomfortable. Reporting channels include school authorities, workplace HR, or local police—seek support and keep records if possible.", tags:["Safety"]},
+      {q: "Can I get an STI from oral sex?", a: "Yes. Some STIs can be transmitted through oral-genital contact. Using condoms or dental dams can reduce risk, and regular testing helps early detection.", tags:["STI"]},
+      {q: "How often should I get tested for STIs?", a: "Testing frequency depends on activity and risk. Sexually active people should discuss testing intervals with a healthcare provider; routine testing is recommended for those with new or multiple partners.", tags:["STI"]},
+      {q: "What if I think I was sexually assaulted?", a: "If you are in immediate danger, call emergency services. Preserve evidence, seek medical attention, and contact a trusted support person or local sexual assault services; help is available and it is not your fault.", tags:["Crisis"]},
+      {q: "Is contraception available for teens?", a: "Many countries provide confidential contraceptive services for teens. Local clinics, school health services, or community health centres can offer guidance—seek a trusted adult or health professional if unsure.", tags:["Contraception","Youth"]},
+      {q: "Can irregular periods be normal?", a: "Periods can be irregular for many reasons (stress, weight changes, hormonal shifts). If irregularities are persistent or accompanied by pain or heavy bleeding, consult a healthcare provider.", tags:["Puberty","Health"]},
+      {q: "How can parents talk to children about sex?", a: "Start early with age-appropriate, honest conversations, use correct anatomical words, answer questions simply, and create a safe space for ongoing dialogue as the child grows.", tags:["Education","Parents"]}
+    ];
+
+    // Inject FAQ items and build structured data array
+    const faqGrid = document.getElementById('faqGrid');
+    const structured = [];
+    qaList.forEach((item, idx) => {
+      const wrap = document.createElement('article');
+      wrap.className = 'qa';
+      wrap.innerHTML = `
+        <div class="q" role="button" aria-expanded="false" tabindex="0" data-index="${idx}">
+          <h3>${item.q}</h3>
+          <span class="meta">Read answer</span>
+        </div>
+        <div class="a" id="a-${idx}">${item.a}</div>
+      `;
+      faqGrid.appendChild(wrap);
+
+      structured.push({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      });
+    });
+
+    // Update JSON-LD structured data
+    (function updateJsonLd(){
+      const script = document.querySelector('script[type="application/ld+json"]');
+      try{
+        const data = JSON.parse(script.textContent);
+        data.mainEntity = structured;
+        script.textContent = JSON.stringify(data);
+      }catch(e){console.warn('Could not update JSON-LD', e)}
+    })();
+
+    // Toggle behaviour
+    function toggleAnswer(el){
+      const idx = el.dataset.index;
+      const ans = document.getElementById('a-'+idx);
+      const expanded = el.getAttribute('aria-expanded') === 'true';
+      el.setAttribute('aria-expanded', !expanded);
+      if(!expanded){ ans.style.display = 'block'; el.querySelector('.meta').textContent = 'Hide answer'; }
+      else { ans.style.display = 'none'; el.querySelector('.meta').textContent = 'Read answer'; }
+    }
+
+    // Add event listeners
+    document.querySelectorAll('.q').forEach(q => {
+      q.addEventListener('click', () => toggleAnswer(q));
+      q.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleAnswer(q); } });
+    });
+
+    // Simple search
+    const searchInput = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('clearBtn');
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.trim().toLowerCase();
+      document.querySelectorAll('.qa').forEach((node, i) => {
+        const qtext = qaList[i].q.toLowerCase();
+        const atext = qaList[i].a.toLowerCase();
+        if(!term || qtext.includes(term) || atext.includes(term) || (qaList[i].tags && qaList[i].tags.join(' ').includes(term))) {
+          node.style.display = '';
+        } else node.style.display = 'none';
+      });
+    });
+    clearBtn.addEventListener('click', () => { searchInput.value=''; searchInput.dispatchEvent(new Event('input')); });
+
+  </script>
+</body>
+</html>
