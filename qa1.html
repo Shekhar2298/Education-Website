@@ -79,6 +79,18 @@
         <!-- Questions will be injected here by script -->
 
       </section>
+<!-- Mid-content responsive ad -->
+<div class="ad-wrapper" style="margin:1.5rem 0;text-align:center;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3779781429274846"
+       data-ad-slot="1234567890"  <!-- replace with your real ad slot ID -->
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
       <div style="margin-top:1.5rem">
         <p class="small">Want to ask anonymously? <a href="/ask.html">Submit a question</a> — we moderate and respond with safe answers.</p>
@@ -192,6 +204,47 @@
       });
     });
     clearBtn.addEventListener('click', () => { searchInput.value=''; searchInput.dispatchEvent(new Event('input')); });
+
+    // ✅ Use existing faqGrid and structured variables (no redeclare)
+qaList.forEach((item, idx) => {
+  // Insert ad block after every 5 questions
+  if (idx > 0 && idx % 5 === 0) {
+    const ad = document.createElement('div');
+    ad.className = "ad-wrapper";
+    ad.innerHTML = `
+      <ins class="adsbygoogle"
+           style="display:block; margin:1rem 0;"
+           data-ad-client="ca-pub-3779781429274846"
+           data-ad-slot="9876543210"  <!-- replace with your real slot -->
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    `;
+    faqGrid.appendChild(ad);
+  }
+
+  const wrap = document.createElement('article');
+  wrap.className = 'qa';
+  wrap.innerHTML = `
+    <div class="q" role="button" aria-expanded="false" tabindex="0" data-index="${idx}">
+      <h3>${item.q}</h3>
+      <span class="meta">Read answer</span>
+    </div>
+    <div class="a" id="a-${idx}">${item.a}</div>
+  `;
+  faqGrid.appendChild(wrap);
+
+  structured.push({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  });
+});
 
   </script>
 </body>
