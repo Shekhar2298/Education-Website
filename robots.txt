@@ -4,4 +4,4 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /images/
 
-Sitemap: https://sexeduforall.duckdns.org/sitemap.xml
+Sitemap: https://sexeduforall.online/sitemap.xml
