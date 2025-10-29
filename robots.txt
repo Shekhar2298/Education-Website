@@ -5,5 +5,5 @@ Allow: /css/
 Allow: /js/
 Allow: /favicon.ico
 Allow: /images/
-Disallow: /private/
 Sitemap: https://sexeduforall.online/sitemap.xml
+
