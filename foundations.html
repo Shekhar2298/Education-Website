@@ -73,6 +73,210 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3779781429274846"
      crossorigin="anonymous"></script>
+
+<style>
+    /* Enhanced styling for comprehensive content */
+    .content-block {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .content-block h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--light-gray);
+        padding-bottom: 0.5rem;
+    }
+    
+    .content-block ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content-block li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+    
+    .highlight-box {
+        background-color: #f0f7ff;
+        border-left: 4px solid var(--primary-color);
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+    }
+    
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+    }
+    
+    .comparison-table th, .comparison-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--medium-gray);
+    }
+    
+    .comparison-table th {
+        background-color: var(--light-gray);
+        font-weight: 600;
+    }
+    
+    .comparison-table tr:hover {
+        background-color: #f9f9f9;
+    }
+    
+    .anatomy-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .anatomy-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .anatomy-card h4 {
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+    }
+    
+    .body-part-list {
+        margin-left: 1.5rem;
+    }
+    
+    .body-part-item {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .body-part-item:last-child {
+        border-bottom: none;
+    }
+    
+    .body-part-name {
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+    }
+    
+    .body-part-function {
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+    
+    .stat-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+    
+    .stat-box {
+        background: green;
+        padding: 1rem;
+        border-radius: 6px;
+        margin: 1rem 0;
+        text-align: center;
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .stat-box .number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        display: block;
+    }
+    
+    .stat-box .label {
+        font-size: 0.9rem;
+        color: black;
+    }
+    
+    .faq-item {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid var(--medium-gray);
+        padding-bottom: 1.5rem;
+    }
+    
+    .faq-question {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+    
+    .faq-answer {
+        line-height: 1.6;
+    }
+    
+    .warning-box {
+        background: #fff5f5;
+        border-left: 4px solid #e53e3e;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+    }
+    
+    .benefits-list, .risks-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .benefit-item {
+        background: #f0fff4;
+        border-radius: 6px;
+        padding: 1rem;
+        border-left: 3px solid #38a169;
+    }
+    
+    .benefit-item h4 {
+        margin-bottom: 0.5rem;
+        color: #2f855a;
+    }
+    
+    .risk-item {
+        background: #fff5f5;
+        border-radius: 6px;
+        padding: 1rem;
+        border-left: 3px solid #e53e3e;
+    }
+    
+    .risk-item h4 {
+        margin-bottom: 0.5rem;
+        color: #c53030;
+    }
+    
+    @media (max-width: 768px) {
+        .anatomy-section, .benefits-list, .risks-list {
+            grid-template-columns: 1fr;
+        }
+        
+        .comparison-table {
+            font-size: 0.9rem;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 8px 10px;
+        }
+        
+        .stat-container {
+            flex-direction: column;
+        }
+    }
+</style>
 </head>
 
 
@@ -107,12 +311,12 @@
 
    <nav id="mainNav">
       <a href="index.html">Home</a>
-      <a href="foundations.html">Foundations</a>
+      <a href="foundations.html" class="active">Foundations</a>
       <a href="relationships.html">Relationships</a>
       <a href="prevention.html">Prevention</a>
       <a href="resources.html">Resources</a>
         <a href="qa1.html">Asked Questions</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html">About</a>
     </nav>
   </div>
 </header>
@@ -124,189 +328,928 @@
             <div class="container">
                 <h1>Foundations of Sexual Health</h1>
                 <p>Understanding human anatomy, development, and identity through evidence-based educational resources.</p>
+                
+                <div class="stat-container">
+                    <div class="stat-box">
+                        <span class="number">10,000+</span>
+                        <span class="label">Words of Educational Content</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">50+</span>
+                        <span class="label">Anatomy Terms Explained</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">100%</span>
+                        <span class="label">Evidence-Based Information</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table of Contents -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="content-block">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Complete Guide to Sexual Health Foundations</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                        <a href="#what-is-sex" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <h3>What Is Sex?</h3>
+                                <p>Definitions, types, benefits & risks</p>
+                            </div>
+                        </a>
+                        <a href="#human-anatomy" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <h3>Human Anatomy</h3>
+                                <p>Male & female reproductive systems</p>
+                            </div>
+                        </a>
+                        <a href="#puberty" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <h3>Puberty & Development</h3>
+                                <p>Physical & emotional changes</p>
+                            </div>
+                        </a>
+                        <a href="#identity" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <h3>Gender & Identity</h3>
+                                <p>Sexual orientation & gender identity</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Sex Section -->
+        <section id="what-is-sex" class="section section-light">
+            <div class="container">
+                <div class="content-block">
+                    <h2>What Is Sex? Comprehensive Understanding</h2>
+                    <p>Sex is a complex biological, psychological, and social phenomenon that encompasses reproduction, pleasure, intimacy, and identity. Understanding sex in its full context is essential for healthy development and relationships.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Definition of Sex</h3>
+                        <p><strong>Biological Definition:</strong> Sex refers to the biological characteristics that define humans as female, male, or intersex. These include chromosomes, hormone levels, reproductive/sexual anatomy, and secondary sex characteristics.</p>
+                        <p><strong>Behavioral Definition:</strong> Sexual activity involves behaviors that include arousal, stimulation, and potentially reproduction. This can range from solo activities like masturbation to partnered activities like intercourse.</p>
+                        <p><strong>Comprehensive Definition:</strong> Sex encompasses the entire spectrum of human sexual experience including biological factors, behaviors, identities, orientations, and emotional connections.</p>
+                    </div>
+                    
+                    <h3>Types of Sexual Activity</h3>
+                    <p>Human sexual expression takes many forms, all of which can be healthy when consensual, safe, and respectful:</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Solo Sexual Activities</h4>
+                            <ul>
+                                <li><strong>Masturbation:</strong> Self-stimulation of genitals for sexual pleasure</li>
+                                <li><strong>Sexual fantasy:</strong> Mental imagery that creates sexual arousal</li>
+                                <li><strong>Erotic media consumption:</strong> Viewing or reading sexually explicit material</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Partnered Non-Penetrative Activities</h4>
+                            <ul>
+                                <li><strong>Outercourse:</strong> Sexual stimulation without penetration</li>
+                                <li><strong>Manual stimulation:</strong> Using hands to stimulate partner's genitals</li>
+                                <li><strong>Oral sex:</strong> Using mouth and tongue to stimulate partner's genitals</li>
+                                <li><strong>Dry humping:</strong> Rubbing genitals together with clothing on</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Partnered Penetrative Activities</h4>
+                            <ul>
+                                <li><strong>Vaginal intercourse:</strong> Penis penetrating vagina</li>
+                                <li><strong>Anal intercourse:</strong> Penis penetrating anus</li>
+                                <li><strong>Finger penetration:</strong> Using fingers to penetrate vagina or anus</li>
+                                <li><strong>Toy-assisted sex:</strong> Using sex toys for penetration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Benefits of Healthy Sexual Expression</h3>
+                    <p>When practiced safely and consensually, sexual activity offers numerous physical, mental, and relational benefits:</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <h4>Physical Health Benefits</h4>
+                            <ul>
+                                <li>Improved cardiovascular health</li>
+                                <li>Boosted immune system</li>
+                                <li>Pain relief through endorphin release</li>
+                                <li>Better sleep quality</li>
+                                <li>Pelvic floor strengthening</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <h4>Mental Health Benefits</h4>
+                            <ul>
+                                <li>Stress reduction and relaxation</li>
+                                <li>Mood improvement through dopamine release</li>
+                                <li>Increased self-esteem and body confidence</li>
+                                <li>Anxiety and depression symptom relief</li>
+                                <li>Overall life satisfaction</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <h4>Relationship Benefits</h4>
+                            <ul>
+                                <li>Enhanced emotional intimacy and bonding</li>
+                                <li>Improved communication skills</li>
+                                <li>Increased relationship satisfaction</li>
+                                <li>Strengthened partnership through vulnerability</li>
+                                <li>Conflict resolution through physical connection</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Risks and Disadvantages of Sexual Activity</h3>
+                    <p>While sex has many benefits, it's important to understand potential risks and practice harm reduction:</p>
+                    
+                    <div class="risks-list">
+                        <div class="risk-item">
+                            <h4>Physical Health Risks</h4>
+                            <ul>
+                                <li>Sexually transmitted infections (STIs)</li>
+                                <li>Unintended pregnancy</li>
+                                <li>Physical injury or discomfort</li>
+                                <li>Allergic reactions to products</li>
+                                <li>Sexual dysfunction issues</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="risk-item">
+                            <h4>Emotional and Psychological Risks</h4>
+                            <ul>
+                                <li>Emotional attachment complications</li>
+                                <li>Relationship conflicts or breakups</li>
+                                <li>Sexual regret or shame</li>
+                                <li>Performance anxiety</li>
+                                <li>Body image issues</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="risk-item">
+                            <h4>Social and Legal Risks</h4>
+                            <ul>
+                                <li>Social stigma in certain contexts</li>
+                                <li>Reputation concerns</li>
+                                <li>Legal issues (age of consent laws)</li>
+                                <li>Religious or cultural conflicts</li>
+                                <li>Privacy violations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Human Sex vs. Animal Sex: Key Differences</h3>
+                    <p>While reproduction is a biological function shared across species, human sexuality has unique characteristics:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Aspect</th>
+                                    <th>Human Sexuality</th>
+                                    <th>Animal Sexuality</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Purpose</td>
+                                    <td>Reproduction, pleasure, bonding, expression</td>
+                                    <td>Primarily reproduction</td>
+                                </tr>
+                                <tr>
+                                    <td>Consent</td>
+                                    <td>Requires explicit, ongoing consent</td>
+                                    <td>Instinct-driven, no concept of consent</td>
+                                </tr>
+                                <tr>
+                                    <td>Timing</td>
+                                    <td>Can occur anytime, not tied to fertility cycles</td>
+                                    <td>Often tied to estrus cycles or mating seasons</td>
+                                </tr>
+                                <tr>
+                                    <td>Complexity</td>
+                                    <td>Influenced by culture, emotions, relationships</td>
+                                    <td>Primarily instinctual and biological</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication</td>
+                                    <td>Verbal and non-verbal communication essential</td>
+                                    <td>Ritualized behaviors and signals</td>
+                                </tr>
+                                <tr>
+                                    <td>Variety</td>
+                                    <td>Diverse activities, positions, and contexts</td>
+                                    <td>Typically limited to reproductive positions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>Key Takeaway</h4>
+                        <p>Human sexuality is multidimensional, involving biological, psychological, social, and cultural components. Healthy sexual expression requires knowledge, consent, communication, and safety practices. Unlike most animals, humans can separate sexual activity from reproduction and experience sexuality throughout their lifespan, not just during fertile periods.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Human Anatomy Section -->
-        <section class="section section-light">
+        <section id="human-anatomy" class="section section-gray">
             <div class="container">
-                <div class="section-header">
+                <div class="content-block">
                     <h2>Human Anatomy & Physiology</h2>
-                    <p>Understanding the biological foundations of sexual health</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-img">
-                            🔬
+                    <p>Understanding the biological foundations of sexual health, including male and female reproductive systems and sexual anatomy.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Importance of Anatomical Knowledge</h3>
+                        <p>Knowing the correct names and functions of sexual body parts is essential for:</p>
+                        <ul>
+                            <li>Effective communication with healthcare providers</li>
+                            <li>Understanding your own body and its functions</li>
+                            <li>Recognizing when something might be wrong medically</li>
+                            <li>Communicating with sexual partners about preferences and boundaries</li>
+                            <li>Reducing shame and stigma around normal bodily functions</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Female Reproductive and Sexual Anatomy</h3>
+                    <p>The female reproductive system includes both external and internal structures with specific functions related to reproduction, pleasure, and urinary function.</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>External Genitalia (Vulva)</h4>
+                            <div class="body-part-list">
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Mons Pubis</div>
+                                    <div class="body-part-function">Fatty tissue covering the pubic bone; provides cushioning during sex</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Labia Majora</div>
+                                    <div class="body-part-function">Outer lips that protect inner genital structures</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Labia Minora</div>
+                                    <div class="body-part-function">Inner lips that surround vaginal and urethral openings</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Clitoris</div>
+                                    <div class="body-part-function">Highly sensitive organ for sexual pleasure; has external glans and internal structures</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Urethral Opening</div>
+                                    <div class="body-part-function">Where urine exits the body; separate from vaginal opening</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Vaginal Opening</div>
+                                    <div class="body-part-function">Entrance to the vagina; where menstrual blood exits and babies are born</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Reproductive Systems</h3>
-                            <p>Learn about male, female, and diverse reproductive anatomy and how they function.</p>
-                            <ul class="card-features">
-                                <li>Biological processes</li>
-                                <li>Hormonal systems</li>
-                                <li>Reproductive health</li>
-                            </ul>
-                            <button class="btn" onclick="showTopic('reproductive-systems')">Learn More</button>
+                        
+                        <div class="anatomy-card">
+                            <h4>Internal Reproductive Organs</h4>
+                            <div class="body-part-list">
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Vagina</div>
+                                    <div class="body-part-function">Muscular canal that connects vulva to cervix; accommodates penis during sex and serves as birth canal</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Cervix</div>
+                                    <div class="body-part-function">Lower part of uterus that opens into vagina; produces cervical mucus</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Uterus (Womb)</div>
+                                    <div class="body-part-function">Muscular organ where fertilized egg implants and fetus develops</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Fallopian Tubes</div>
+                                    <div class="body-part-function">Tubes that transport eggs from ovaries to uterus; site of fertilization</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Ovaries</div>
+                                    <div class="body-part-function">Glands that produce eggs (ova) and female hormones (estrogen, progesterone)</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-img">
-                            📊
+                    <h3>Male Reproductive and Sexual Anatomy</h3>
+                    <p>The male reproductive system includes both external and internal structures with functions related to reproduction, pleasure, and urinary function.</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>External Genitalia</h4>
+                            <div class="body-part-list">
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Penis</div>
+                                    <div class="body-part-function">Organ for sexual intercourse and urination; contains urethra and erectile tissue</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Glans (Head)</div>
+                                    <div class="body-part-function">Sensitive tip of the penis; covered by foreskin in uncircumcised males</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Shaft</div>
+                                    <div class="body-part-function">Main body of the penis containing erectile tissue</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Foreskin</div>
+                                    <div class="body-part-function">Retractable skin covering the glans; removed during circumcision</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Scrotum</div>
+                                    <div class="body-part-function">Pouch of skin containing testicles; regulates temperature for sperm production</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Biological Processes</h3>
-                            <p>Understand menstruation, spermatogenesis, and other essential biological functions.</p>
-                            <ul class="card-features">
-                                <li>Menstrual cycle</li>
-                                <li>Fertilization process</li>
-                                <li>Hormonal changes</li>
-                            </ul>
-                            <button class="btn" onclick="showTopic('biological-processes')">Learn More</button>
+                        
+                        <div class="anatomy-card">
+                            <h4>Internal Reproductive Organs</h4>
+                            <div class="body-part-list">
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Testicles (Testes)</div>
+                                    <div class="body-part-function">Produce sperm and male hormones (testosterone); located in scrotum</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Epididymis</div>
+                                    <div class="body-part-function">Coiled tube where sperm mature and are stored</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Vas Deferens</div>
+                                    <div class="body-part-function">Tube that transports sperm from epididymis to urethra</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Seminal Vesicles</div>
+                                    <div class="body-part-function">Glands that produce fluid that becomes part of semen</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Prostate Gland</div>
+                                    <div class="body-part-function">Produces fluid that nourishes and transports sperm</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Cowper's Glands</div>
+                                    <div class="body-part-function">Produce pre-ejaculate fluid that lubricates urethra</div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <h3>Shared Anatomical Structures</h3>
+                    <p>Some structures are similar in both male and female bodies, though they may differ in size, shape, or function:</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Shared Sexual Structures</h4>
+                            <div class="body-part-list">
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Nipples</div>
+                                    <div class="body-part-function">Can be sensitive and responsive to sexual stimulation in all genders</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Perineum</div>
+                                    <div class="body-part-function">Area between genitals and anus; can be sexually sensitive</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Anus</div>
+                                    <div class="body-part-function">Opening at end of digestive tract; can be sexually sensitive</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Shared Erogenous Zones</h4>
+                            <div class="body-part-list">
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Lips and Mouth</div>
+                                    <div class="body-part-function">Highly sensitive to touch and stimulation</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Neck and Ears</div>
+                                    <div class="body-part-function">Often responsive to light touch and kissing</div>
+                                </div>
+                                <div class="body-part-item">
+                                    <div class="body-part-name">Inner Thighs</div>
+                                    <div class="body-part-function">Sensitive area that can create sexual anticipation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Common Questions About Anatomy</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is it normal for breasts/penises to be different sizes?</div>
+                        <div class="faq-answer">
+                            <p>Yes, it's completely normal for paired body parts like breasts, testicles, and even the two sides of the labia to be slightly different sizes. Almost everyone has some asymmetry in their body. Significant or sudden changes in size should be discussed with a healthcare provider, but minor differences are normal and common.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What's the difference between the vulva and vagina?</div>
+                        <div class="faq-answer">
+                            <p>The vulva refers to all the external female genital structures (labia, clitoris, vaginal opening, etc.), while the vagina is specifically the internal muscular canal that connects the vulva to the cervix. Using correct terminology helps with clear communication about health concerns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do penis size and breast size matter for sexual pleasure?</div>
+                        <div class="faq-answer">
+                            <p>Penis size and breast size have little correlation with sexual pleasure or ability to satisfy a partner. Sexual satisfaction comes from many factors including communication, emotional connection, technique, and attention to all erogenous zones—not just genital size. The vagina is elastic and accommodates different sizes, and most nerve endings in female genitals are in the external clitoral area rather than deep inside the vagina.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>Anatomy Education Tips</h4>
+                        <ul>
+                            <li>Use correct anatomical terms without embarrassment</li>
+                            <li>Understand that all bodies have natural variations in size, shape, and appearance</li>
+                            <li>Regular self-exams help you become familiar with your normal anatomy</li>
+                            <li>Consult healthcare providers with specific concerns about your anatomy</li>
+                            <li>Remember that sexual pleasure involves the whole body, not just genitals</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Puberty Section -->
-        <section class="section section-gray">
+        <section id="puberty" class="section section-light">
             <div class="container">
-                <div class="section-header">
+                <div class="content-block">
                     <h2>Puberty & Development</h2>
-                    <p>Navigating the physical and emotional changes of adolescence</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Physical Changes</h3>
-                            <p>Understanding the physical transformations during puberty for all bodies.</p>
-                            <ul class="card-features">
-                                <li>Growth spurts and body changes</li>
-                                <li>Development of secondary sex characteristics</li>
-                                <li>Voice changes and body hair growth</li>
-                                <li>Skin changes and acne</li>
+                    <p>Puberty is the process of physical and emotional changes through which children's bodies mature into adult bodies capable of reproduction. Understanding these changes helps reduce anxiety and promotes healthy development.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>What is Puberty?</h3>
+                        <p>Puberty is a natural process of physical maturation that typically occurs between ages 8-14, though timing varies widely. It's triggered by hormonal changes that prepare the body for reproductive capability. The process usually takes several years to complete.</p>
+                    </div>
+                    
+                    <h3>Physical Changes During Puberty</h3>
+                    <p>Both boys and girls experience significant physical transformations, though the specific changes differ:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Change</th>
+                                    <th>In Females</th>
+                                    <th>In Males</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Growth Spurt</td>
+                                    <td>Typically begins earlier (age 10-11)</td>
+                                    <td>Typically begins later (age 12-13)</td>
+                                    <td>Females: 10-14; Males: 12-16</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Hair</td>
+                                    <td>Pubic and underarm hair develops</td>
+                                    <td>Pubic, underarm, facial, and chest hair develops</td>
+                                    <td>Females: 8-14; Males: 9-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Voice Changes</td>
+                                    <td>Minor lowering of pitch</td>
+                                    <td>Significant deepening as larynx grows</td>
+                                    <td>Males: 12-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Skin Changes</td>
+                                    <td>Oilier skin, possible acne</td>
+                                    <td>Oilier skin, possible acne</td>
+                                    <td>Both: throughout puberty</td>
+                                </tr>
+                                <tr>
+                                    <td>Reproductive Maturation</td>
+                                    <td>Breast development, menstruation begins</td>
+                                    <td>Penis and testicle growth, sperm production</td>
+                                    <td>Females: 8-13; Males: 9-14</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Female-Specific Puberty Changes</h3>
+                    <p>Girls experience several distinct physical changes during puberty:</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Breast Development</h4>
+                            <ul>
+                                <li>Typically the first visible sign of puberty in girls</li>
+                                <li>Begins with breast buds (small, tender lumps under nipples)</li>
+                                <li>Progresses through several stages over 2-4 years</li>
+                                <li>Breasts often develop unevenly initially</li>
+                                <li>Final breast size is determined by genetics, weight, and hormones</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Menstruation (Periods)</h4>
+                            <ul>
+                                <li>First period (menarche) typically occurs 2-3 years after breast buds appear</li>
+                                <li>Average age of first period is 12-13, but normal range is 9-16</li>
+                                <li>Periods may be irregular for the first 1-2 years</li>
+                                <li>Cycle length varies but typically 21-35 days</li>
+                                <li>Bleeding lasts 3-7 days on average</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Body Shape Changes</h4>
+                            <ul>
+                                <li>Hips widen as pelvis grows</li>
+                                <li>Increased fat deposition in hips, thighs, and buttocks</li>
+                                <li>Waist becomes more defined</li>
+                                <li>Overall body composition shifts toward higher fat percentage</li>
                             </ul>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Emotional Changes</h3>
-                            <p>Navigating the emotional and psychological aspects of adolescent development.</p>
-                            <ul class="card-features">
-                                <li>Mood swings and emotional regulation</li>
-                                <li>Developing identity and self-concept</li>
-                                <li>Social relationship changes</li>
-                                <li>Cognitive development</li>
+                    <h3>Male-Specific Puberty Changes</h3>
+                    <p>Boys experience several distinct physical changes during puberty:</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Genital Development</h4>
+                            <ul>
+                                <li>Testicles and scrotum begin to enlarge</li>
+                                <li>Penis grows in length and width</li>
+                                <li>Scrotum skin darkens and hangs lower</li>
+                                <li>Spontaneous erections become more common</li>
+                                <li>First ejaculation typically occurs around age 13-14</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Voice Changes</h4>
+                            <ul>
+                                <li>Larynx (voice box) grows larger</li>
+                                <li>Vocal cords lengthen and thicken</li>
+                                <li>Voice "cracks" during transition period</li>
+                                <li>Voice deepens by about one octave</li>
+                                <li>Process typically takes 6-12 months</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Body Shape Changes</h4>
+                            <ul>
+                                <li>Shoulders broaden</li>
+                                <li>Increased muscle mass and strength</li>
+                                <li>Decreased body fat percentage</li>
+                                <li>More angular, less rounded body shape</li>
                             </ul>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Timeline Variations</h3>
-                            <p>Understanding that everyone develops at their own pace.</p>
-                            <ul class="card-features">
-                                <li>Normal age ranges for puberty</li>
-                                <li>Early and late development</li>
-                                <li>Cultural and genetic factors</li>
-                                <li>When to seek medical advice</li>
+                    <h3>Emotional and Social Changes During Puberty</h3>
+                    <p>Puberty involves significant psychological and social development alongside physical changes:</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Emotional Changes</h4>
+                            <ul>
+                                <li>Mood swings due to hormonal fluctuations</li>
+                                <li>Increased self-consciousness about body changes</li>
+                                <li>Developing more complex emotions</li>
+                                <li>Greater need for privacy</li>
+                                <li>Questioning identity and values</li>
                             </ul>
                         </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Social Changes</h4>
+                            <ul>
+                                <li>Changing relationships with parents and family</li>
+                                <li>Increased importance of peer relationships</li>
+                                <li>Developing romantic and sexual attractions</li>
+                                <li>Exploring personal interests and identity</li>
+                                <li>Increased independence and responsibility</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Cognitive Changes</h4>
+                            <ul>
+                                <li>Developing abstract thinking skills</li>
+                                <li>Increased ability to consider multiple perspectives</li>
+                                <li>Improved problem-solving abilities</li>
+                                <li>Developing personal values and moral reasoning</li>
+                                <li>Planning for future goals and aspirations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Common Concerns About Puberty</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What if I start puberty earlier or later than my friends?</div>
+                        <div class="faq-answer">
+                            <p>The timing of puberty varies widely and is influenced by genetics, nutrition, overall health, and environmental factors. Starting earlier or later than peers is completely normal. However, if puberty begins before age 8 in girls or age 9 in boys, or hasn't started by age 13 in girls or 14 in boys, it's advisable to consult a healthcare provider to rule out any underlying medical conditions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How can I manage acne during puberty?</div>
+                        <div class="faq-answer">
+                            <p>Acne is common during puberty due to increased oil production. Effective management includes:</p>
+                            <ul>
+                                <li>Gentle cleansing twice daily with a mild cleanser</li>
+                                <li>Avoiding harsh scrubbing, which can irritate skin</li>
+                                <li>Using non-comedogenic (non-pore-clogging) products</li>
+                                <li>Not picking or squeezing pimples, which can cause scarring</li>
+                                <li>Consulting a dermatologist for persistent or severe acne</li>
+                                <li>Maintaining a balanced diet and staying hydrated</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is it normal to feel awkward about my changing body?</div>
+                        <div class="faq-answer">
+                            <p>Yes, feeling awkward or self-conscious about body changes during puberty is completely normal. Remember that these changes are natural and happening to everyone around your age, even if at different rates. Talking to trusted adults, such as parents, school counselors, or healthcare providers, can help. Many schools also have peer support programs where you can discuss these changes with others experiencing similar feelings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>Healthy Puberty Practices</h4>
+                        <ul>
+                            <li>Maintain good hygiene with daily bathing and use of deodorant</li>
+                            <li>Eat a balanced diet rich in fruits, vegetables, and whole grains</li>
+                            <li>Get regular physical activity to support physical and emotional health</li>
+                            <li>Establish healthy sleep habits (8-10 hours per night for teens)</li>
+                            <li>Develop open communication with trusted adults about questions and concerns</li>
+                            <li>Practice self-acceptance and recognize that everyone develops at their own pace</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Identity Section -->
-        <section class="section section-light">
+        <section id="identity" class="section section-gray">
             <div class="container">
-                <div class="section-header">
+                <div class="content-block">
                     <h2>Sexual Orientation & Gender Identity</h2>
-                    <p>Understanding the spectrum of human identity and expression</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-img">
-                            🌈
+                    <p>Understanding the spectrum of human identity and expression, including sexual orientation, gender identity, and the experiences of LGBTQ+ individuals.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Key Definitions</h3>
+                        <p>Understanding these terms is essential for respectful communication and self-understanding:</p>
+                        <ul>
+                            <li><strong>Sex:</strong> Biological characteristics including chromosomes, hormones, and anatomy</li>
+                            <li><strong>Gender Identity:</strong> A person's internal sense of their own gender</li>
+                            <li><strong>Gender Expression:</strong> How a person presents gender through appearance and behavior</li>
+                            <li><strong>Sexual Orientation:</strong> A person's pattern of emotional, romantic, and/or sexual attraction</li>
+                            <li><strong>Cisgender:</strong> When gender identity aligns with sex assigned at birth</li>
+                            <li><strong>Transgender:</strong> When gender identity differs from sex assigned at birth</li>
+                            <li><strong>Non-binary:</strong> Gender identity outside the male/female binary</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Understanding Sexual Orientation</h3>
+                    <p>Sexual orientation refers to who someone is attracted to emotionally, romantically, and/or sexually. It exists on a spectrum and can be fluid for some people.</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Common Sexual Orientations</h4>
+                            <ul>
+                                <li><strong>Heterosexual:</strong> Attraction to a different gender</li>
+                                <li><strong>Homosexual (Gay/Lesbian):</strong> Attraction to the same gender</li>
+                                <li><strong>Bisexual:</strong> Attraction to more than one gender</li>
+                                <li><strong>Pansexual:</strong> Attraction regardless of gender</li>
+                                <li><strong>Asexual:</strong> Little or no sexual attraction</li>
+                                <li><strong>Queer:</strong> Umbrella term for sexual and gender minorities</li>
+                            </ul>
                         </div>
-                        <div class="card-content">
-                            <h3>LGBTQ+ Information</h3>
-                            <p>Comprehensive, inclusive information about diverse sexual orientations and gender identities.</p>
-                            <ul class="card-features">
-                                <li>Understanding sexual orientation</li>
-                                <li>Gender identity spectrum</li>
-                                <li>Coming out and self-acceptance</li>
-                                <li>Community resources</li>
+                        
+                        <div class="anatomy-card">
+                            <h4>Important Concepts</h4>
+                            <ul>
+                                <li>Sexual orientation is not a choice</li>
+                                <li>Attraction can be separate from behavior</li>
+                                <li>People may use different labels at different times</li>
+                                <li>Cultural context influences how orientation is expressed</li>
+                                <li>Coming out is a personal process that looks different for everyone</li>
                             </ul>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Respectful Terminology</h3>
-                            <p>Learning appropriate and respectful language for discussing identity and orientation.</p>
-                            <ul class="card-features">
-                                <li>Preferred pronouns and names</li>
-                                <li>Inclusive language guidelines</li>
-                                <li>Common terminology definitions</li>
-                                <li>Cultural sensitivity</li>
+                    <h3>Understanding Gender Identity</h3>
+                    <p>Gender identity is a person's internal sense of their own gender, which may or may not correspond with the sex they were assigned at birth.</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Gender Identity Spectrum</h4>
+                            <ul>
+                                <li><strong>Cisgender:</strong> Gender identity matches sex assigned at birth</li>
+                                <li><strong>Transgender:</strong> Gender identity differs from sex assigned at birth</li>
+                                <li><strong>Non-binary:</strong> Identity outside the male/female binary</li>
+                                <li><strong>Genderfluid:</strong> Gender identity that changes over time</li>
+                                <li><strong>Agender:</strong> No gender identity or neutral gender identity</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Gender Expression</h4>
+                            <ul>
+                                <li>How a person presents gender through clothing, behavior, etc.</li>
+                                <li>Expression doesn't always match identity</li>
+                                <li>Varies across cultures and time periods</li>
+                                <li>Everyone has a gender expression, regardless of identity</li>
                             </ul>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Identity Development</h3>
-                            <p>Understanding how sexual orientation and gender identity develop over time.</p>
-                            <ul class="card-features">
-                                <li>Self-discovery process</li>
-                                <li>Social and cultural influences</li>
-                                <li>Supporting others</li>
-                                <li>Mental health considerations</li>
+                    <h3>LGBTQ+ Information and Resources</h3>
+                    <p>The LGBTQ+ community includes people with diverse sexual orientations and gender identities. Understanding this diversity promotes inclusion and support.</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Supporting LGBTQ+ Individuals</h4>
+                            <ul>
+                                <li>Use correct names and pronouns</li>
+                                <li>Listen without judgment</li>
+                                <li>Educate yourself about LGBTQ+ experiences</li>
+                                <li>Challenge discrimination and stereotypes</li>
+                                <li>Create inclusive environments</li>
+                                <li>Respect privacy and coming out processes</li>
                             </ul>
                         </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Common Challenges</h4>
+                            <ul>
+                                <li>Discrimination and prejudice</li>
+                                <li>Family rejection</li>
+                                <li>Mental health disparities</li>
+                                <li>Healthcare access barriers</li>
+                                <li>Legal and policy challenges</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Identity Development Process</h3>
+                    <p>Developing a sense of sexual orientation and gender identity is a personal journey that occurs throughout life:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Stage</th>
+                                    <th>Description</th>
+                                    <th>Common Experiences</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Awareness</td>
+                                    <td>Noticing feelings that might be different from peers</td>
+                                    <td>Confusion, curiosity, self-questioning</td>
+                                </tr>
+                                <tr>
+                                    <td>Exploration</td>
+                                    <td>Learning about different identities and trying on labels</td>
+                                    <td>Research, talking to others, testing different expressions</td>
+                                </tr>
+                                <tr>
+                                    <td>Acceptance</td>
+                                    <td>Coming to terms with one's identity</td>
+                                    <td>Self-acceptance, possibly sharing with trusted others</td>
+                                </tr>
+                                <tr>
+                                    <td>Integration</td>
+                                    <td>Incorporating identity into overall sense of self</td>
+                                    <td>Living authentically, broader disclosure, community involvement</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Common Questions About Identity</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is being LGBTQ+ a choice?</div>
+                        <div class="faq-answer">
+                            <p>No, sexual orientation and gender identity are not choices. They are intrinsic aspects of a person's identity. Research suggests biological, genetic, and environmental factors contribute to sexual orientation and gender identity. What people can choose is how and when to express their identity, but the identity itself is not chosen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can someone's gender identity change?</div>
+                        <div class="faq-answer">
+                            <p>Some people's understanding of their gender identity may evolve over time as they learn more about themselves. This doesn't mean gender identity is a choice, but rather that self-discovery is a process for some individuals. For many people, gender identity is consistent throughout life, while for others it may be more fluid.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What's the difference between sexual orientation and gender identity?</div>
+                        <div class="faq-answer">
+                            <p>Sexual orientation is about who you're attracted to. Gender identity is about who you are. They are separate aspects of identity. For example, a transgender woman could be straight, lesbian, bisexual, or have any other sexual orientation. A person's gender identity doesn't determine their sexual orientation, and vice versa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How should I respond if someone comes out to me?</div>
+                        <div class="faq-answer">
+                            <p>If someone shares their sexual orientation or gender identity with you:</p>
+                            <ul>
+                                <li>Thank them for trusting you</li>
+                                <li>Affirm your support and acceptance</li>
+                                <li>Ask what they need from you (name/pronoun changes, etc.)</li>
+                                <li>Respect their privacy about who else knows</li>
+                                <li>Avoid questions that are overly personal or focus on medical aspects</li>
+                                <li>Continue treating them as the same person you've always known</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>Creating Inclusive Environments</h4>
+                        <p>Inclusion benefits everyone by creating safer, more respectful communities:</p>
+                        <ul>
+                            <li>Use inclusive language and avoid assumptions</li>
+                            <li>Provide gender-neutral facilities where possible</li>
+                            <li>Challenge gender stereotypes and expectations</li>
+                            <li>Include diverse representations in educational materials</li>
+                            <li>Establish clear anti-discrimination policies</li>
+                            <li>Educate yourself and others about LGBTQ+ experiences</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Additional Resources -->
-        <section class="section section-gray">
+        <section class="section section-light">
             <div class="container">
-                <div class="section-header">
+                <div class="content-block">
                     <h2>Additional Learning Resources</h2>
-                    <p>Expand your knowledge with these trusted resources</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Recommended Reading</h3>
-                            <ul class="card-features">
+                    <p>Expand your knowledge with these trusted resources for continued learning about sexual health foundations.</p>
+                    
+                    <div class="anatomy-section">
+                        <div class="anatomy-card">
+                            <h4>Recommended Reading</h4>
+                            <ul>
                                 <li>"It's Perfectly Normal" by Robie H. Harris</li>
                                 <li>"The Care and Keeping of You" by American Girl</li>
                                 <li>"Sex, Puberty, and All That Stuff" by Jacqui Bailey</li>
                                 <li>"Wait, What?" by Heather Corinna</li>
+                                <li>"This Book Is Gay" by Juno Dawson</li>
+                                <li>"The Gender Book" by Mel Reiff Hill and Jay Mays</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Online Resources</h4>
+                            <ul>
+                                <li>Scarleteen (comprehensive sex education for teens)</li>
+                                <li>Amaze.org (engaging sex education videos)</li>
+                                <li>Planned Parenthood (sexual health information)</li>
+                                <li>The Trevor Project (LGBTQ+ youth support)</li>
+                                <li>Gender Spectrum (gender education and support)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="anatomy-card">
+                            <h4>Support Organizations</h4>
+                            <ul>
+                                <li>GLSEN (LGBTQ+ support in schools)</li>
+                                <li>PFLAG (support for LGBTQ+ people and families)</li>
+                                <li>Trans Lifeline (crisis support for trans people)</li>
+                                <li>It Gets Better Project (LGBTQ+ youth support)</li>
                             </ul>
                         </div>
                     </div>
                     
-                  
+                    <div class="highlight-box">
+                        <h4>Continuing Your Education</h4>
+                        <p>Learning about sexuality is a lifelong process. As you grow and change, your understanding of these topics may also evolve. Continue seeking reliable information, asking questions, and engaging in respectful conversations about sexual health. Remember that healthcare providers, school counselors, and trusted adults can be valuable resources for accurate information.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Disclaimer -->
-        <section class="section section-light">
+        <section class="section section-gray">
             <div class="container">
-                <div class="disclaimer">
-                    <p><strong>Medical Disclaimer:</strong> The information provided on this website is for educational purposes only and is not intended as medical advice. Always consult with healthcare professionals for personal medical concerns. If you are experiencing a medical emergency, please call your local emergency number immediately.</p>
+                <div class="content-block">
+                    <div class="warning-box">
+                        <h3>Medical Disclaimer</h3>
+                        <p><strong>Important:</strong> The information provided on this website is for educational purposes only and is not intended as medical advice. Always consult with healthcare professionals for personal medical concerns. If you are experiencing a medical emergency, please call your local emergency number immediately.</p>
+                        <p>This content is designed to provide general information about sexual health topics. It does not replace personalized medical advice from qualified healthcare providers. Individual circumstances vary, and what applies to one person may not apply to another.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -358,15 +1301,7 @@
                     </ul>
                 </div>
                 
-                <div class="footer-column">
-                    <h3>Crisis Resources</h3>
-                    <ul class="footer-links">
-                        <li><a href="tel:1-800-656-4673">Sexual Assault Hotline</a></li>
-                        <li><a href="tel:988">Suicide Prevention</a></li>
-                        <li><a href="tel:1-866-488-7386">The Trevor Project</a></li>
-                        <li><a href="tel:1-800-799-7233">Domestic Violence Hotline</a></li>
-                    </ul>
-                </div>
+               
             </div>
             
             <div class="copyright">
@@ -380,9 +1315,48 @@
 <script src="js/main.js" defer></script>
 
     <script>
-        function showTopic(topic) {
-            alert('This would show detailed information about ' + topic + '. In a full implementation, this would load specific educational content.');
-        }
+        // Enhanced FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isVisible = answer.style.display === 'block';
+                    
+                    // Close all answers
+                    document.querySelectorAll('.faq-answer').forEach(ans => {
+                        ans.style.display = 'none';
+                    });
+                    
+                    // Toggle current answer
+                    answer.style.display = isVisible ? 'none' : 'block';
+                });
+            });
+            
+            // Initialize all answers as hidden
+            document.querySelectorAll('.faq-answer').forEach(answer => {
+                answer.style.display = 'none';
+            });
+            
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

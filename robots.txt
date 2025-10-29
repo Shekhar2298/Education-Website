@@ -1,8 +1,7 @@
 User-agent: *
-Allow: /
-<<<<<<< HEAD
-=======
+Allow: /$
+Allow: /index.html
 Allow: /css/
 Allow: /js/
->>>>>>> 758863c99809250b96475e20b6d6423e857d2dae
+Allow: /images/
 Sitemap: https://sexeduforall.online/sitemap.xml

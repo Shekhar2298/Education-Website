@@ -59,6 +59,242 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3779781429274846"
      crossorigin="anonymous"></script>
+     
+     <style>
+        /* Additional styles for enhanced content */
+        .content-block {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .content-block h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 0.5rem;
+        }
+        
+        .content-block ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content-block li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        .comparison-table th {
+            background-color: var(--light-gray);
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .method-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .stat-box {
+            background: greenyellow;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        
+        .stat-box .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+        
+        .stat-box .label {
+            font-size: 0.9rem;
+            color: black;
+        }
+        
+        .quiz-container {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .quiz-question {
+            margin-bottom: 1.5rem;
+        }
+        
+        .quiz-options {
+            margin-left: 1.5rem;
+        }
+        
+        .quiz-options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .resource-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .resource-item {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resource-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .resource-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--medium-gray);
+            padding-bottom: 1.5rem;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        .faq-answer {
+            line-height: 1.6;
+        }
+        
+        .scenario-container {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .scenario-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .warning-signs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-sign {
+            background: #fff5f5;
+            border-radius: 6px;
+            padding: 1rem;
+            border-left: 3px solid #e53e3e;
+        }
+        
+        .warning-sign h4 {
+            margin-bottom: 0.5rem;
+            color: #c53030;
+        }
+        
+        .healthy-trait {
+            background: #f0fff4;
+            border-radius: 6px;
+            padding: 1rem;
+            border-left: 3px solid #38a169;
+        }
+        
+        .healthy-trait h4 {
+            margin-bottom: 0.5rem;
+            color: #2f855a;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .checklist-item input {
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        
+        .script-box {
+            background: #edf2f7;
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            font-style: italic;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .script-label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .resource-list, .warning-signs {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th, .comparison-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
 </head>
 
 
@@ -94,282 +330,1698 @@
      <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="foundations.html">Foundations</a>
-      <a href="relationships.html">Relationships</a>
+      <a href="relationships.html" class="active">Relationships</a>
       <a href="prevention.html">Prevention</a>
       <a href="resources.html">Resources</a>
         <a href="qa1.html">Asked Questions</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html">About</a>
     </nav>
   </div>
 </header>
 
 
     <main id="main-content">
-        <!-- Hero Section -->
+        <!-- HERO -->
         <section class="hero">
             <div class="container">
                 <h1>Healthy Relationships & Consent</h1>
                 <p>Building respectful connections, understanding boundaries, and developing communication skills for healthy relationships.</p>
+                <div class="stat-container" style="display: flex; justify-content: space-around; margin-top: 2rem; flex-wrap: wrap;">
+                    <div class="stat-box">
+                        <span class="number">85%</span>
+                        <span class="label">Teens Want Consent Education</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">1 in 3</span>
+                        <span class="label">Experience Relationship Abuse</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">92%</span>
+                        <span class="label">Better Communication After Training</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Understanding Consent -->
+        <!-- Table of Contents -->
         <section class="section section-light">
             <div class="container">
-                <div class="section-header">
-                    <h2>Understanding Consent</h2>
-                    <p>Learning about the FRIES model of consent and boundary-setting</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-img">
-                            ✅
-                        </div>
-                        <div class="card-content">
-                            <h3>FRIES Model of Consent</h3>
-                            <p>Consent should be Freely given, Reversible, Informed, Enthusiastic, and Specific.</p>
-                            <ul class="card-features">
-                                <li><strong>Freely given:</strong> Without pressure or coercion</li>
-                                <li><strong>Reversible:</strong> Can be withdrawn at any time</li>
-                                <li><strong>Informed:</strong> Knowing what you're agreeing to</li>
-                                <li><strong>Enthusiastic:</strong> Excited and willing participation</li>
-                                <li><strong>Specific:</strong> Agreement to specific activities</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-img">
-                            🗣️
-                        </div>
-                        <div class="card-content">
-                            <h3>Communication Skills</h3>
-                            <p>Developing effective communication for expressing and respecting boundaries.</p>
-                            <ul class="card-features">
-                                <li>Active listening techniques</li>
-                                <li>"I" statements for expressing needs</li>
-                                <li>Non-verbal communication awareness</li>
-                                <li>Asking clear, specific questions</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-img">
-                            🚧
-                        </div>
-                        <div class="card-content">
-                            <h3>Boundary Setting</h3>
-                            <p>Establishing and maintaining personal boundaries in relationships.</p>
-                            <ul class="card-features">
-                                <li>Identifying personal limits</li>
-                                <li>Communicating boundaries clearly</li>
-                                <li>Respecting others' boundaries</li>
-                                <li>Handling boundary violations</li>
-                            </ul>
-                        </div>
+                <div class="content-block">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Complete Guide to Healthy Relationships & Consent</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                        <a href="#understanding-consent" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <span class="method-icon">✅</span>
+                                <h3>Understanding Consent</h3>
+                                <p>FRIES model & practical examples</p>
+                            </div>
+                        </a>
+                        <a href="#communication" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <span class="method-icon">💬</span>
+                                <h3>Communication Skills</h3>
+                                <p>Build trust & resolve conflicts</p>
+                            </div>
+                        </a>
+                        <a href="#boundaries" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <span class="method-icon">🛑</span>
+                                <h3>Setting Boundaries</h3>
+                                <p>Physical, emotional & digital</p>
+                            </div>
+                        </a>
+                        <a href="#digital-safety" style="text-decoration: none; color: inherit;">
+                            <div class="card" style="text-align: center; padding: 1.5rem;">
+                                <span class="method-icon">📱</span>
+                                <h3>Digital Safety</h3>
+                                <p>Online relationships & sexting</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Relationship Education -->
-        <section class="section section-gray">
+        <!-- INTRO: WHY THIS MATTERS -->
+        <section class="section section-light" id="intro">
             <div class="container">
-                <div class="section-header">
-                    <h2>Relationship Education</h2>
-                    <p>Identifying healthy relationships and developing positive relationship skills</p>
+                <div class="content-block">
+                    <h2>Why Relationships & Consent Matter</h2>
+                    <p>Relationships shape our health, happiness and safety. Whether between friends, family members, partners, classmates or colleagues, the quality of our interactions determines emotional wellbeing, productivity and social trust. Consent and clear communication are the foundations: they prevent harm, reduce confusion, and enable mutual respect.</p>
+                    <p>In India and around the world, conversations about consent, boundaries and digital safety are becoming essential because the internet, social media and changing social norms have created new opportunities and new risks. This guide gives you practical language, scripts, checklists, and examples you can use today.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Quick takeaway:</h4>
+                        <p>Respect, clarity and willingness to learn are the most powerful tools for healthy relationships.</p>
+                    </div>
+                    
+                    <h3>The Impact of Healthy Relationships</h3>
+                    <p>Research consistently shows that healthy relationships contribute significantly to overall wellbeing. People in supportive, respectful relationships experience:</p>
+                    
+                    <div class="resource-list">
+                        <div class="healthy-trait">
+                            <h4>Better Mental Health</h4>
+                            <p>Lower rates of depression, anxiety, and stress-related disorders</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Improved Physical Health</h4>
+                            <p>Stronger immune systems and lower blood pressure</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Longer Lifespan</h4>
+                            <p>Up to 50% increased survival rates compared to isolated individuals</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Greater Resilience</h4>
+                            <p>Better ability to cope with life challenges and trauma</p>
+                        </div>
+                    </div>
+                    
+                    <h3>The Cost of Unhealthy Relationships</h3>
+                    <p>Conversely, unhealthy or abusive relationships have devastating consequences:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="warning-sign">
+                            <h4>Mental Health Impact</h4>
+                            <p>Increased risk of PTSD, depression, anxiety, and substance abuse</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Physical Health Consequences</h4>
+                            <p>Chronic pain, gastrointestinal issues, and increased vulnerability to illness</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Economic Impact</h4>
+                            <p>Lost productivity, medical costs, and reduced earning potential</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Intergenerational Impact</h4>
+                            <p>Children who witness unhealthy relationships are more likely to repeat patterns</p>
+                        </div>
+                    </div>
+                    
+                    <p>By learning and practicing healthy relationship skills, we not only improve our own lives but contribute to healthier families, communities, and societies.</p>
                 </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Healthy vs Unhealthy Relationships</h3>
-                            <p>Recognizing the signs of healthy and unhealthy relationship dynamics.</p>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
-                                <div>
-                                    <h4 style="color: var(--accent-green); margin-bottom: 0.5rem;">Healthy Signs</h4>
-                                    <ul class="card-features" style="font-size: 0.9rem;">
-                                        <li>Mutual respect</li>
-                                        <li>Trust and honesty</li>
-                                        <li>Good communication</li>
-                                        <li>Individual identity</li>
-                                        <li>Equality and fairness</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 style="color: var(--emergency-red); margin-bottom: 0.5rem;">Warning Signs</h4>
-                                    <ul class="card-features" style="font-size: 0.9rem;">
-                                        <li>Control and jealousy</li>
-                                        <li>Disrespect</li>
-                                        <li>Dishonesty</li>
-                                        <li>Pressure and coercion</li>
-                                        <li>Isolation from others</li>
-                                    </ul>
-                                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: UNDERSTANDING CONSENT -->
+        <section class="section section-gray" id="understanding-consent">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Understanding Consent</h2>
+                    <p>Consent means agreeing to something with a clear, informed, and voluntary "yes." It is a practice—something you ask for and something you listen for. Consent is required for physical intimacy, sharing private information or images, and for many everyday interactions (borrowing possessions, taking photos, close physical contact).</p>
+
+                    <h3>The FRIES Model of Consent</h3>
+                    <p>The FRIES model is a helpful mnemonic that outlines the essential characteristics of consent:</p>
+                    
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Freely Given</h4>
+                            <p>Consent must be given without pressure, manipulation, or coercion. It should be a choice made without fear of consequences for saying no.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Reversible</h4>
+                            <p>Anyone can change their mind at any time, even if they've previously consented. Consent is not a one-time permission that applies indefinitely.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Informed</h4>
+                            <p>All parties must know what they're agreeing to. Withholding information or lying invalidates consent.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Enthusiastic</h4>
+                            <p>Consent should be an excited "yes!" rather than reluctant agreement. Look for active participation, not just absence of "no."</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Specific</h4>
+                            <p>Consent to one activity doesn't mean consent to others. Each new activity requires its own clear agreement.</p>
+                        </div>
+                    </div>
+
+                    <h3>Everyday Consent Examples</h3>
+                    <p>Consent is not only sexual. Examples you can practice today:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Personal Space & Touch</div>
+                        <p>"Is it okay if I give you a hug?" "Would you like me to move closer or would you prefer more space?"</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Sharing & Borrowing</div>
+                        <p>"Can I use your phone for a quick call?" "Would you mind if I shared this story with others?"</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Social Situations</div>
+                        <p>"Are you comfortable if I tag you in this photo?" "Would you like to join us or would you prefer to sit this one out?"</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Dating & Relationships</div>
+                        <p>"Are you comfortable if I hold your hand?" "Would you like to kiss?" "How are you feeling about this?"</p>
+                    </div>
+
+                    <h3>How to Ask for Consent and How to Respond</h3>
+                    <p>Simple phrases you can use in various situations:</p>
+                    
+                    <div class="script-box">
+                        <span class="script-label">To Ask for Consent:</span>
+                        "Do you want to kiss?" "Is this okay with you?" "Would you be comfortable if...?" "How does this feel for you?" "What would you like to do?"
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">To Give or Refuse Consent:</span>
+                        "Yes, I'd like that." "No, I'm not comfortable." "Not now, thank you." "I'm not sure, let's talk about it." "I'd prefer something else."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">To Withdraw Consent:</span>
+                        "I changed my mind." "Please stop." "I need to slow down." "This isn't working for me anymore." "I want to take a break."
+                    </div>
+
+                    <h3>What Does NOT Count as Consent?</h3>
+                    <p>It's crucial to understand that certain situations and behaviors cannot constitute valid consent:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="warning-sign">
+                            <h4>Silence or Passivity</h4>
+                            <p>Not saying "no" is not the same as saying "yes." Consent requires active agreement.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Previous Consent</h4>
+                            <p>Agreeing to something once doesn't mean perpetual consent. Each encounter requires fresh consent.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Under Influence</h4>
+                            <p>Someone who is intoxicated, drugged, or otherwise impaired cannot give meaningful consent.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Coercion or Pressure</h4>
+                            <p>Consent given due to threats, manipulation, or persistent pressure is not valid.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Unconsciousness</h4>
+                            <p>Someone who is asleep, unconscious, or otherwise unable to communicate cannot consent.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Assumed Consent</h4>
+                            <p>Relationship status, clothing, flirtation, or previous sexual activity do not imply consent.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Teaching Tip:</h4>
+                        <p>Teach the language of consent early. Young people who know how to ask and say "no" safely are less likely to experience harm and more likely to develop healthy relationship patterns.</p>
+                    </div>
+
+                    <h3>Quick Consent Scripts for Practice</h3>
+                    <p>Practice these short scripts aloud so they feel natural in real situations:</p>
+                    
+                    <div class="script-box">
+                        "I want to make sure you're comfortable — is it okay if we...?"
+                    </div>
+                    
+                    <div class="script-box">
+                        "I'm not ready for that, can we slow down?"
+                    </div>
+                    
+                    <div class="script-box">
+                        "I need to stop now."
+                    </div>
+                    
+                    <div class="script-box">
+                        "Let's check in with each other — how are you feeling about this?"
+                    </div>
+                    
+                    <div class="script-box">
+                        "I'm enjoying this, are you?"
+                    </div>
+                    
+                    <h3>Consent Across Different Relationships</h3>
+                    <p>Consent practices vary depending on the relationship context but the core principles remain the same:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Relationship Type</th>
+                                    <th>Consent Considerations</th>
+                                    <th>Examples</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Friendships</td>
+                                    <td>Respecting personal space, confidentiality, and emotional boundaries</td>
+                                    <td>Asking before sharing personal information, respecting when a friend needs space</td>
+                                </tr>
+                                <tr>
+                                    <td>Family Relationships</td>
+                                    <td>Respecting autonomy while maintaining care responsibilities</td>
+                                    <td>Knocking before entering rooms, not forcing physical affection on children</td>
+                                </tr>
+                                <tr>
+                                    <td>Romantic Partnerships</td>
+                                    <td>Ongoing communication about physical and emotional boundaries</td>
+                                    <td>Checking in about comfort levels, respecting when a partner says no</td>
+                                </tr>
+                                <tr>
+                                    <td>Professional Relationships</td>
+                                    <td>Maintaining appropriate boundaries and respecting personal limits</td>
+                                    <td>Not requiring social activities outside work hours, respecting personal space</td>
+                                </tr>
+                                <tr>
+                                    <td>Online Interactions</td>
+                                    <td>Respecting digital boundaries and privacy</td>
+                                    <td>Asking before tagging in photos, not sharing private messages</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Cultural Considerations for Consent</h3>
+                    <p>While consent principles are universal, their expression may vary across cultures:</p>
+                    
+                    <div class="highlight-box">
+                        <h4>In Indian Context:</h4>
+                        <p>Traditional values emphasizing family harmony and respect for elders can sometimes make explicit consent conversations challenging. However, these conversations are increasingly important in modern India where individual autonomy is valued alongside family relationships. Finding culturally appropriate ways to discuss boundaries and consent is essential.</p>
+                    </div>
+                    
+                    <p>Regardless of cultural background, everyone has the right to bodily autonomy and to set boundaries in their relationships. Learning to navigate consent respectfully within cultural contexts is a skill that strengthens rather than undermines cultural values.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: COMMUNICATION SKILLS -->
+        <section class="section section-light" id="communication">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Communication Skills that Build Trust</h2>
+                    <p>Clear, respectful communication is the engine of any healthy relationship. It's a skill we practice: listening, naming feelings, and asking clarifying questions. Developing emotional intelligence helps reduce reactive arguments and increases mutual understanding.</p>
+
+                    <h3>Core Communication Skills</h3>
+                    <p>Effective communication involves both expressing yourself clearly and understanding others accurately:</p>
+                    
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Active Listening</h4>
+                            <p>Give full attention, make eye contact, and paraphrase what you heard: "So you're saying...?" "It sounds like you feel..."</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>I-Statements</h4>
+                            <p>Express feelings without blaming: "I feel hurt when..." instead of "You always..."</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Checking Understanding</h4>
+                            <p>Ask "Do I have that right?" to prevent misunderstandings before they escalate.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Nonverbal Awareness</h4>
+                            <p>Notice tone, eye contact, and body language — they matter as much as words in communication.</p>
+                        </div>
+                    </div>
+
+                    <h3>Conflict: A Healthy Approach</h3>
+                    <p>Conflicts are normal and can be productive when managed well. Here are steps for healthy conflict resolution:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 1: Preparation</div>
+                        <p>Choose an appropriate time and place. Don't have important conversations when tired, hungry, or rushed. Ask: "Is now a good time to talk about something important?"</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 2: Expressing Concerns</div>
+                        <p>Name the issue without attacking the person. Use "I" statements: "I feel concerned when..." rather than "You always..."</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 3: Listening</div>
+                        <p>Listen to the other person's perspective without interrupting. Try to understand their feelings and viewpoint.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 4: Problem-Solving</div>
+                        <p>Brainstorm solutions together. Focus on finding a resolution that works for both parties rather than "winning" the argument.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 5: Follow-Through</div>
+                        <p>Agree on a next step and a timeline. Check back later to see whether the solution worked or needs adjustment.</p>
+                    </div>
+
+                    <h3>Repair Language</h3>
+                    <p>Repairing after a conflict matters. Useful phrases include:</p>
+                    
+                    <div class="script-box">
+                        "I'm sorry — I didn't mean to hurt you."
+                    </div>
+                    
+                    <div class="script-box">
+                        "I was wrong about that."
+                    </div>
+                    
+                    <div class="script-box">
+                        "How can we make this better?"
+                    </div>
+                    
+                    <div class="script-box">
+                        "Thank you for telling me how you feel."
+                    </div>
+                    
+                    <div class="script-box">
+                        "I understand why you felt that way."
+                    </div>
+                    
+                    <p>Reparative efforts rebuild trust faster than silence or defensiveness. Even when you don't agree with someone's perspective, validating their feelings can help repair connection.</p>
+
+                    <div class="highlight-box">
+                        <h4>Practice Exercise:</h4>
+                        <p>Try a 10-minute weekly check-in with your partner or a close friend. Discuss three things: (1) What went well in our relationship this week? (2) What was one difficulty? (3) What is one request for support?</p>
+                    </div>
+                    
+                    <h3>Communication Challenges and Solutions</h3>
+                    <p>Common communication problems and how to address them:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Challenge</th>
+                                    <th>Description</th>
+                                    <th>Solution</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Defensiveness</td>
+                                    <td>Reacting to feedback with justification or counter-attack</td>
+                                    <td>Listen fully before responding. Try to understand the concern behind the criticism.</td>
+                                </tr>
+                                <tr>
+                                    <td>Stonewalling</td>
+                                    <td>Withdrawing from conversation or giving silent treatment</td>
+                                    <td>Take a brief timeout if overwhelmed, but commit to returning to the conversation.</td>
+                                </tr>
+                                <tr>
+                                    <td>Criticism</td>
+                                    <td>Attacking character rather than addressing specific behavior</td>
+                                    <td>Use gentle start-ups and focus on specific actions, not personality traits.</td>
+                                </tr>
+                                <tr>
+                                    <td>Contempt</td>
+                                    <td>Expressing disrespect through sarcasm, eye-rolling, or mockery</td>
+                                    <td>Practice appreciating positive qualities and expressing needs respectfully.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Digital Communication Skills</h3>
+                    <p>With so much communication happening online, developing digital communication skills is essential:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="warning-sign">
+                            <h4>Avoid Assumptions</h4>
+                            <p>Without tone and body language, texts can be easily misinterpreted. When in doubt, clarify.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Respect Response Times</h4>
+                            <p>Not everyone can or should respond immediately. Avoid demanding instant replies.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Think Before Posting</h4>
+                            <p>Consider how your words might affect others before sharing on social media.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Handle Disagreements Privately</h4>
+                            <p>Address conflicts through private messages rather than public comments.</p>
+                        </div>
+                    </div>
+                    
+                    <p>Healthy digital communication maintains the same respect, clarity, and boundary-awareness as in-person interactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: BOUNDARIES -->
+        <section class="section section-gray" id="boundaries">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Setting and Respecting Boundaries</h2>
+                    <p>Boundaries are statements about what you are comfortable with and what you are not. They can be physical, emotional, digital, or financial. Healthy boundaries protect personal wellbeing and promote mutual respect.</p>
+
+                    <h3>Types of Boundaries</h3>
+                    <p>Understanding different types of boundaries helps you identify where you might need to set clearer limits:</p>
+                    
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Physical Boundaries</h4>
+                            <p>Who can touch you and how. This includes personal space, touch preferences, and physical privacy.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Emotional Boundaries</h4>
+                            <p>How much you share and how you are treated emotionally. Protecting your emotional energy and not taking responsibility for others' feelings.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Digital Boundaries</h4>
+                            <p>What you post, who can tag you, and how private information is handled online.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Time & Energy Boundaries</h4>
+                            <p>How much time you spend together versus alone, and how you allocate your energy across relationships and responsibilities.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Material Boundaries</h4>
+                            <p>What you're comfortable sharing or lending, and expectations around money and possessions.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Intellectual Boundaries</h4>
+                            <p>Respecting others' thoughts, ideas, and opinions, even when they differ from your own.</p>
+                        </div>
+                    </div>
+
+                    <h3>How to Set a Boundary</h3>
+                    <p>Setting boundaries is a skill that becomes easier with practice. Here's a simple formula:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 1: Identify Your Limit</div>
+                        <p>Get clear on what you're comfortable with and what crosses a line for you.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 2: Communicate Clearly</div>
+                        <p>Use a short, clear sentence and, if needed, a brief reason: "I don't want to talk about my ex today." "Please don't check my messages — I value privacy."</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 3: Stay Consistent</div>
+                        <p>Reinforce your boundary if it's tested. Avoid over-explaining; a calm, consistent boundary is easier to respect.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 4: Manage Your Expectations</div>
+                        <p>Understand that not everyone will respond positively to your boundaries, but your wellbeing is worth protecting them.</p>
+                    </div>
+
+                    <h3>Responding to Boundary Violations</h3>
+                    <p>If someone crosses a boundary, here's how to respond effectively:</p>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Acknowledge the Behavior:</span>
+                        "I notice you're continuing to ask about that topic after I said I didn't want to discuss it."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Restate Your Boundary:</span>
+                        "As I mentioned, I'm not comfortable discussing this. I need you to respect that."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">State the Consequence:</span>
+                        "If this continues, I'll need to end this conversation/leave/take some space."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Follow Through:</span>
+                        If the behavior continues, implement the consequence you stated.
+                    </div>
+                    
+                    <p>If boundary violations continue despite your clear communication, consider whether ongoing contact with this person is healthy for you.</p>
+
+                    <div class="highlight-box">
+                        <h4>Important Tip:</h4>
+                        <p>Boundaries often change as relationships and circumstances evolve. Revisit them respectfully as needed. Regular check-ins about boundaries can strengthen relationships by ensuring everyone's comfort and needs are considered.</p>
+                    </div>
+                    
+                    <h3>Common Boundary Challenges</h3>
+                    <p>Many people struggle with setting boundaries for various reasons:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Challenge</th>
+                                    <th>Description</th>
+                                    <th>Strategy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fear of Conflict</td>
+                                    <td>Worrying that setting boundaries will create arguments or tension</td>
+                                    <td>Remember that clear boundaries often prevent bigger conflicts later</td>
+                                </tr>
+                                <tr>
+                                    <td>Guilt</td>
+                                    <td>Feeling selfish or wrong for prioritizing your needs</td>
+                                    <td>Recognize that self-care enables you to show up better for others</td>
+                                </tr>
+                                <tr>
+                                    <td>People-Pleasing</td>
+                                    <td>Habit of prioritizing others' comfort over your own wellbeing</td>
+                                    <td>Practice small boundary-setting exercises to build confidence</td>
+                                </tr>
+                                <tr>
+                                    <td>Cultural Expectations</td>
+                                    <td>Cultural norms that emphasize self-sacrifice or deference to others</td>
+                                    <td>Find culturally respectful ways to express your needs and limits</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Boundaries in Different Relationship Contexts</h3>
+                    <p>Boundaries may look different depending on the relationship:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">With Family</div>
+                        <p>Examples: "I appreciate your concern, but I'll make my own decisions about my career." "I need to leave family gatherings by 9 PM to maintain my sleep schedule."</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">With Friends</div>
+                        <p>Examples: "I'm not available for last-minute plans during work hours." "I'd prefer if you didn't share that story with others."</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">With Romantic Partners</div>
+                        <p>Examples: "I need some alone time to recharge after work." "I'm not comfortable with you going through my phone without asking."</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">At Work</div>
+                        <p>Examples: "I don't check emails after 6 PM." "I'm not comfortable discussing my personal life at work."</p>
+                    </div>
+                    
+                    <p>Remember that healthy boundaries benefit both parties by creating clarity, reducing resentment, and fostering mutual respect.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: HEALTHY VS UNHEALTHY RELATIONSHIPS -->
+        <section class="section section-light" id="healthy-unhealthy">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Healthy vs Unhealthy Relationships</h2>
+                    <p>Recognising the difference between healthy and unhealthy dynamics helps you make safer choices. Healthy relationships promote growth; unhealthy ones cause stress, fear, and isolation.</p>
+
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+                        <div>
+                            <h3>Healthy Relationship Traits</h3>
+                            <div class="healthy-trait">
+                                <h4>Mutual Respect and Kindness</h4>
+                                <p>Valuing each other as individuals with inherent worth, speaking kindly even during disagreements</p>
+                            </div>
+                            <div class="healthy-trait">
+                                <h4>Honest Communication</h4>
+                                <p>Sharing thoughts and feelings openly while being considerate of each other's perspectives</p>
+                            </div>
+                            <div class="healthy-trait">
+                                <h4>Support for Individual Goals</h4>
+                                <p>Encouraging each other's personal growth, friendships, and interests outside the relationship</p>
+                            </div>
+                            <div class="healthy-trait">
+                                <h4>Equal Decision-Making</h4>
+                                <p>Sharing power and making important decisions together as equals</p>
+                            </div>
+                            <div class="healthy-trait">
+                                <h4>Freedom and Independence</h4>
+                                <p>Maintaining separate identities, friendships, and activities while enjoying time together</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Warning Signs of Unhealthy Relationships</h3>
+                            <div class="warning-sign">
+                                <h4>Excessive Jealousy or Possessiveness</h4>
+                                <p>Questioning your interactions with others, accusing you of inappropriate behavior without cause</p>
+                            </div>
+                            <div class="warning-sign">
+                                <h4>Isolation from Friends/Family</h4>
+                                <p>Discouraging or preventing you from spending time with loved ones or participating in activities you enjoy</p>
+                            </div>
+                            <div class="warning-sign">
+                                <h4>Monitoring or Controlling Behavior</h4>
+                                <p>Demanding passwords, tracking your location, controlling your finances or daily activities</p>
+                            </div>
+                            <div class="warning-sign">
+                                <h4>Pressuring for Sexual Activity or Secrecy</h4>
+                                <p>Guilting or coercing you into sexual acts or insisting you keep aspects of the relationship secret</p>
+                            </div>
+                            <div class="warning-sign">
+                                <h4>Insults, Humiliation, or Physical Harm</h4>
+                                <p>Name-calling, put-downs, threats, or any form of physical violence including pushing, hitting, or restraining</p>
                             </div>
                         </div>
                     </div>
+
+                    <h3>The Relationship Spectrum</h3>
+                    <p>Relationships exist on a spectrum from healthy to abusive, with many falling somewhere in between:</p>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Communication Techniques</h3>
-                            <p>Practical skills for effective relationship communication.</p>
-                            <ul class="card-features">
-                                <li>Active listening and validation</li>
-                                <li>Conflict resolution strategies</li>
-                                <li>Expressing needs and feelings</li>
-                                <li>Giving and receiving feedback</li>
-                                <li>Apologizing and forgiving</li>
-                            </ul>
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Healthy</th>
+                                    <th>Concerning</th>
+                                    <th>Unhealthy</th>
+                                    <th>Abusive</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Respecting boundaries</td>
+                                    <td>Occasionally crossing boundaries but apologizing</td>
+                                    <td>Regularly ignoring stated boundaries</td>
+                                    <td>Intentionally violating boundaries as control</td>
+                                </tr>
+                                <tr>
+                                    <td>Supporting independence</td>
+                                    <td>Mild discomfort with separate activities</td>
+                                    <td>Expressing jealousy about time with others</td>
+                                    <td>Forbidding contact with friends/family</td>
+                                </tr>
+                                <tr>
+                                    <td>Resolving conflicts respectfully</td>
+                                    <td>Occasional yelling but making repairs</td>
+                                    <td>Frequent arguments with name-calling</td>
+                                    <td>Using threats, intimidation, or violence</td>
+                                </tr>
+                                <tr>
+                                    <td>Shared decision-making</td>
+                                    <td>Occasionally making unilateral decisions</td>
+                                    <td>Regularly making decisions without consultation</td>
+                                    <td>Controlling all aspects of partner's life</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>If You Are Concerned About Your Relationship</h3>
+                    <p>If you recognize unhealthy patterns in your relationship, consider these steps:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 1: Acknowledge the Problem</div>
+                        <p>Be honest with yourself about concerning behaviors, even if you love the person. Denial prolongs harm.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 2: Seek Perspective</div>
+                        <p>Talk to a trusted friend, family member, or counselor who can offer objective insight.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 3: Create a Safety Plan</div>
+                        <p>If you feel unsafe, identify a trusted contact, keep copies of important documents, and know local emergency numbers.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 4: Access Support</div>
+                        <p>Professional services and NGOs can help with counseling, shelter, legal advice, and safety planning.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 5: Consider Your Options</div>
+                        <p>Depending on the situation, options might include couples counseling, setting firmer boundaries, or ending the relationship.</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Important:</h4>
+                        <p>If you are in immediate danger, contact local emergency services. In India, women can dial 112 for emergency assistance, or 181 for women's helpline in many states.</p>
+                    </div>
+                    
+                    <h3>Supporting Someone in an Unhealthy Relationship</h3>
+                    <p>If you're concerned about a friend or family member:</p>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Express Concern Without Judgment:</span>
+                        "I've noticed some things that worry me about how you're being treated. I care about you and want to make sure you're okay."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Listen and Validate:</span>
+                        "That sounds really difficult. Thank you for trusting me with this."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Offer Practical Support:</span>
+                        "If you ever need a place to stay or someone to go with you to appointments, I'm here."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Respect Their Decisions:</span>
+                        "I trust you to know what's best for your situation. I'm here regardless of what you decide."
+                    </div>
+                    
+                    <p>Avoid ultimatums or pressure, which can isolate the person further. Your consistent, non-judgmental support is most valuable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: SEXUAL ORIENTATION & IDENTITY -->
+        <section class="section section-gray" id="identity">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Gender, Identity & Inclusion</h2>
+                    <p>Understanding gender identity and sexual orientation fosters inclusive communities. Everyone deserves respect, chosen names and pronouns, and access to care without discrimination.</p>
+
+                    <h3>Basic Definitions</h3>
+                    <p>Clear definitions help create shared understanding:</p>
+                    
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Gender Identity</h4>
+                            <p>One's internal sense of being male, female, both, neither, or another identity. This may or may not correspond with sex assigned at birth.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Sexual Orientation</h4>
+                            <p>Who someone is attracted to emotionally, romantically, or sexually. Examples include heterosexual, homosexual, bisexual, pansexual, asexual.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Sex Characteristics</h4>
+                            <p>Biological traits such as chromosomes, hormones and reproductive anatomy. Sometimes called "sex assigned at birth."</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Transgender</h4>
+                            <p>People whose gender identity differs from the sex they were assigned at birth.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Cisgender</h4>
+                            <p>People whose gender identity aligns with the sex they were assigned at birth.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Non-Binary</h4>
+                            <p>People who don't identify exclusively as male or female. They may identify as both, neither, or another gender.</p>
+                        </div>
+                    </div>
+
+                    <h3>How to Be an Ally</h3>
+                    <p>Being an ally means actively supporting marginalized communities:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Use Correct Names and Pronouns</div>
+                        <p>Use a person's chosen name and pronouns. If you make a mistake, apologize briefly and correct yourself.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Listen and Support</div>
+                        <p>Listen to LGBTQ+ people's experiences without assuming you understand. Offer support without centering your own feelings.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Challenge Discrimination</div>
+                        <p>Speak up against bullying and misinformation respectfully. Use educational approaches when possible.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Promote Safe Spaces</div>
+                        <p>Advocate for inclusive policies and practices in families, schools, workplaces, and healthcare settings.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Educate Yourself</div>
+                        <p>Take responsibility for learning about LGBTQ+ issues rather than expecting marginalized people to educate you.</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Resources:</h4>
+                        <p>Local LGBTQ+ support groups and national helplines can provide culturally appropriate counselling and community support. In India, organizations like Naz Foundation, Humsafar Trust, and Sappho for Equality offer resources and support.</p>
+                    </div>
+                    
+                    <h3>Common Questions About Gender and Sexuality</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is being LGBTQ+ a choice?</div>
+                        <div class="faq-answer">
+                            <p>No, sexual orientation and gender identity are not choices. They are intrinsic aspects of a person's identity. Research suggests biological, genetic, and environmental factors contribute to sexual orientation and gender identity.</p>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Conflict Resolution</h3>
-                            <p>Healthy approaches to managing disagreements and conflicts.</p>
-                            <ul class="card-features">
-                                <li>Staying calm during disagreements</li>
-                                <li>Focusing on the issue, not the person</li>
-                                <li>Finding compromise and solutions</li>
-                                <li>Knowing when to take space</li>
-                                <li>Seeking help when needed</li>
-                            </ul>
+                    <div class="faq-item">
+                        <div class="faq-question">Can someone's gender identity change?</div>
+                        <div class="faq-answer">
+                            <p>Some people's understanding of their gender identity may evolve over time as they learn more about themselves. This doesn't mean gender identity is a choice, but rather that self-discovery is a process for some individuals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What's the difference between sexual orientation and gender identity?</div>
+                        <div class="faq-answer">
+                            <p>Sexual orientation is about who you're attracted to. Gender identity is about who you are. They are separate aspects of identity. For example, a transgender woman could be straight, lesbian, bisexual, or have any other sexual orientation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How should I respond if someone comes out to me?</div>
+                        <div class="faq-answer">
+                            <p>Thank them for trusting you, affirm your support, ask what they need from you, and respect their privacy about who else knows. Avoid questions that are overly personal or focus on medical aspects of transition.</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Creating Inclusive Environments</h3>
+                    <p>Inclusion benefits everyone by creating safer, more respectful communities:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="healthy-trait">
+                            <h4>Use Inclusive Language</h4>
+                            <p>Use "they" when unsure of pronouns, avoid gendered assumptions about relationships</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Provide Gender-Neutral Facilities</h4>
+                            <p>Where possible, offer gender-neutral bathrooms and changing facilities</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Challenge Gender Stereotypes</h4>
+                            <p>Avoid assumptions about interests, careers, or behaviors based on gender</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Include Diverse Representations</h4>
+                            <p>In educational materials, include LGBTQ+ people and relationships</p>
+                        </div>
+                    </div>
+                    
+                    <p>Creating truly inclusive spaces requires ongoing effort, education, and willingness to learn from mistakes. The goal is environments where everyone can bring their whole selves without fear of discrimination or harm.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: SAFE SEX & PREVENTION -->
+        <section class="section section-light" id="safe-sex">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Safe Sex, Contraception & Sexual Health</h2>
+                    <p>Sexual health includes prevention, testing, and informed choices about contraception. Condoms are the most accessible method that also reduces many STI risks; other methods (pills, IUDs, injectables) are available through health services.</p>
+
+                    <h3>Contraception Basics</h3>
+                    <p>Understanding contraceptive options helps people make informed decisions about their sexual health:</p>
+                    
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Condoms</h4>
+                            <p>Protect against many STIs and pregnancy when used correctly. Available without prescription.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Oral Contraceptives</h4>
+                            <p>Require prescription in many places and have varied side-effects. Must be taken consistently.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>IUDs & Implants</h4>
+                            <p>Long-acting reversible options available via clinics. Highly effective for years.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Emergency Contraception</h4>
+                            <p>Use after unprotected sex; available at pharmacies—use promptly for best effectiveness.</p>
+                        </div>
+                    </div>
+
+                    <h3>STI Testing & Treatment</h3>
+                    <p>If you are sexually active, periodic testing is a responsible step toward maintaining sexual health:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">When to Get Tested</div>
+                        <p>Before beginning a new sexual relationship, if you have multiple partners, after unprotected sex, or if you experience symptoms.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">What Testing Involves</div>
+                        <p>Depending on the STI, testing may involve urine samples, blood tests, or swabs. Many STIs show no symptoms initially.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Confidentiality</div>
+                        <p>Clinics offer confidential testing. In many places, minors can access testing without parental consent.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Treatment Options</div>
+                        <p>Many STIs are curable with antibiotics; others are manageable with medication. Early treatment prevents complications.</p>
+                    </div>
+                    
+                    <p>Symptoms like unusual discharge, pain, sores or rashes merit urgent clinical review. Don't delay seeking care due to embarrassment—healthcare providers are trained to handle these concerns professionally.</p>
+
+                    <h3>Talking to Your Partner About Testing</h3>
+                    <p>Discussing sexual health with partners can feel awkward but is essential for mutual safety:</p>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Normalize the Conversation:</span>
+                        "I got tested recently and thought we could share results. Would you be willing to do the same?"
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Frame as Mutual Responsibility:</span>
+                        "I think it's important for both of us to feel confident about our sexual health."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Offer to Go Together:</span>
+                        "We could get tested together if that would make it easier."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Address Concerns Gently:</span>
+                        "I understand this might feel awkward, but our health is worth it."
+                    </div>
+                    
+                    <p>Honest conversations reduce risk and build trust in relationships. If a partner refuses testing or becomes defensive, consider whether this relationship supports your health and safety.</p>
+
+                    <div class="highlight-box">
+                        <h4>Important Tip:</h4>
+                        <p>If cost or privacy is a concern, look for local NGOs or government clinics offering adolescent-friendly services. Many provide free or low-cost testing and contraception.</p>
+                    </div>
+                    
+                    <h3>Navigating Consent in Sexual Relationships</h3>
+                    <p>Consent is especially important in sexual contexts. Remember these key principles:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="warning-sign">
+                            <h4>Ongoing Consent</h4>
+                            <p>Consent isn't a one-time permission. Check in throughout sexual activity.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Enthusiastic Participation</h4>
+                            <p>Look for active, enthusiastic participation rather than mere absence of "no."</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Respect Withdrawal</h4>
+                            <p>If someone changes their mind, stop immediately without pressure or guilt.</p>
+                        </div>
+                        <div class="warning-sign">
+                            <h4>Consider Power Dynamics</h4>
+                            <p>Be aware that age differences, authority positions, or dependency can affect ability to consent freely.</p>
+                        </div>
+                    </div>
+                    
+                    <p>Healthy sexual relationships involve mutual pleasure, respect, and communication. They should leave both people feeling good about themselves and each other.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: PORN LITERACY & MEDIA -->
+        <section class="section section-gray" id="porn-literacy">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Porn Literacy & Media Influence</h2>
+                    <p>Online sexual content is widespread and often shapes expectations. Porn is entertainment—rarely educational—and it can create unrealistic pressure about bodies, consent, and performance. Porn literacy helps people separate fantasy from real-life intimacy.</p>
+
+                    <h3>Key Ideas to Teach About Pornography</h3>
+                    <p>Understanding these concepts helps develop critical thinking about sexual media:</p>
+                    
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Porn Is Performance</h4>
+                            <p>Porn actors perform scripted scenes; safe practices and communication are often absent. Real sex doesn't look like porn.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Unrealistic Bodies and Expectations</h4>
+                            <p>Porn features selective body types and creates unrealistic standards. Real bodies come in diverse shapes, sizes, and abilities.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Consent Is Often Missing</h4>
+                            <p>Porn frequently depicts behavior that would be non-consensual in real life. Real intimacy requires ongoing, enthusiastic consent.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Performance Pressure</h4>
+                            <p>Porn creates expectations about duration, activities, and responses that don't reflect most people's real sexual experiences.</p>
+                        </div>
+                    </div>
+
+                    <h3>How to Talk About Porn with Teens</h3>
+                    <p>Open, non-shaming conversations help young people develop healthy perspectives:</p>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Start with Curiosity, Not Confrontation:</span>
+                        "Many people your age come across porn online. Have you ever had questions about what you've seen?"
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Differentiate Fantasy from Reality:</span>
+                        "Porn is like an action movie—it's entertainment, not a documentary about real relationships."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Address Consent Explicitly:</span>
+                        "In real relationships, people check in with each other and make sure everyone is comfortable. That's often missing in porn."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Provide Alternative Resources:</span>
+                        "If you have questions about bodies or relationships, I'll answer honestly. There are also great books and websites with accurate information."
+                    </div>
+                    
+                    <div class="script-box">
+                        <span class="script-label">Discuss Media Literacy:</span>
+                        "Just like we talk about how advertisements try to sell us things, it's important to think critically about what porn is trying to 'sell.'"
+                    </div>
+                    
+                    <p>Stay calm, avoid shaming, and focus on consent and realistic expectations. The goal is education, not punishment.</p>
+                    
+                    <h3>Potential Impacts of Porn Consumption</h3>
+                    <p>While research is mixed, some potential concerns include:</p>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Potential Impact</th>
+                                    <th>Description</th>
+                                    <th>Mitigation Strategies</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Unrealistic Expectations</td>
+                                    <td>Believing real sex should mirror porn performances</td>
+                                    <td>Education about realistic sexual relationships and diverse experiences</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Image Issues</td>
+                                    <td>Comparing oneself to selectively chosen performers</td>
+                                    <td>Promoting body positivity and media literacy</td>
+                                </tr>
+                                <tr>
+                                    <td>Confusion About Consent</td>
+                                    <td>Normalizing non-consensual behavior depicted in some porn</td>
+                                    <td>Explicit education about consent and boundaries</td>
+                                </tr>
+                                <tr>
+                                    <td>Addiction Concerns</td>
+                                    <td>Compulsive consumption interfering with daily life</td>
+                                    <td>Education about healthy media habits and seeking support if needed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>It's important to note that not everyone who views porn experiences negative effects, and many people consume porn without it significantly impacting their relationships or self-image. The key is developing critical thinking skills.</p>
+                    
+                    <h3>Healthy Alternatives to Porn for Sexual Education</h3>
+                    <p>For those seeking accurate information about sexuality:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="healthy-trait">
+                            <h4>Comprehensive Sex Education</h4>
+                            <p>School-based programs that cover consent, communication, and relationships</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Evidence-Based Books and Websites</h4>
+                            <p>Resources from reputable health organizations and sexuality educators</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Open Conversations</h4>
+                            <p>Discussions with trusted adults, healthcare providers, or counselors</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Ethical Sex-Positive Content</h4>
+                            <p>Some creators produce educational content that depicts consensual, realistic sexuality</p>
+                        </div>
+                    </div>
+                    
+                    <p>The goal isn't necessarily to eliminate porn consumption but to ensure people have the critical thinking skills to contextualize what they see and access to accurate information about sexuality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: DIGITAL SAFETY & SEXTING -->
+        <section class="section section-light" id="digital-safety">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Digital Safety & Sexting</h2>
+                    <p>Digital life is part of modern relationships. Protect privacy, avoid risky sharing, and know how to respond to threats like non-consensual image sharing.</p>
+
+                    <h3>Practical Digital Safety Rules</h3>
+                    <p>These guidelines help maintain safety and respect in digital spaces:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Think Before You Send</div>
+                        <p>Once an image is out, you may lose control over it. Consider whether you'd be comfortable if the content was seen by unintended audiences.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Respect Others' Boundaries</div>
+                        <p>Never pressure someone to send intimate content. Respect "no" immediately and without argument.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Secure Your Accounts</div>
+                        <p>Use strong, unique passwords and two-factor authentication for accounts. Regularly update privacy settings.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Control Your Digital Footprint</div>
+                        <p>Set social media profiles to private if you prefer control over who sees posts. Be selective about what you share publicly.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Be Wary of Location Sharing</div>
+                        <p>Consider disabling location services on apps that don't need them. Be cautious about sharing your real-time location.</p>
+                    </div>
+
+                    <h3>If Images Are Shared Without Consent</h3>
+                    <p>Non-consensual image sharing is a serious violation. If it happens to you:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 1: Preserve Evidence</div>
+                        <p>Take screenshots with timestamps, save URLs, and document all instances of unauthorized sharing.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 2: Report the Content</div>
+                        <p>Report the content to the platform using their reporting tools. Most platforms have policies against non-consensual intimate imagery.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 3: Seek Legal Advice</div>
+                        <p>Contact local cyber-crime units or helplines for advice. In many places, non-consensual sharing is illegal.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Step 4: Get Emotional Support</div>
+                        <p>Non-consensual sharing is a serious violation. Seek support from trusted friends, family, or counseling services.</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Important Legal Note:</h4>
+                        <p>For minors, creating, sharing, or possessing sexual images may have legal implications—even if consensual. Seek immediate adult support and legal guidance if involved in such situations.</p>
+                    </div>
+                    
+                    <h3>Healthy Digital Relationship Practices</h3>
+                    <p>Maintain healthy boundaries and communication in digital spaces:</p>
+                    
+                    <div class="warning-signs">
+                        <div class="healthy-trait">
+                            <h4>Respect Response Times</h4>
+                            <p>Understand that not everyone can or should respond immediately to messages.</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Maintain Privacy Boundaries</h4>
+                            <p>Don't share private information about your relationship without mutual agreement.</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Address Conflicts Directly</h4>
+                            <p>Have important conversations in person or via voice/video call rather than text.</p>
+                        </div>
+                        <div class="healthy-trait">
+                            <h4>Balance Digital and In-Person Connection</h4>
+                            <p>Ensure digital communication complements rather than replaces face-to-face interaction.</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Sexting: Considerations and Guidelines</h3>
+                    <p>If considering sexting (sending sexually explicit messages or images):</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Consider the Risks</div>
+                        <p>Even with trusted partners, images can be leaked through hacking, device loss, or relationship changes.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Establish Mutual Trust</div>
+                        <p>Only consider sexting in relationships with established trust and clear agreements about privacy.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Avoid Identifying Features</div>
+                        <p>If sharing images, avoid showing faces, tattoos, or distinctive backgrounds that could identify you.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Know the Legal Context</div>
+                        <p>In many places, creating or sharing sexual images of minors (even self-produced) may violate child pornography laws.</p>
+                    </div>
+                    
+                    <p>Remember that you always have the right to decline requests for intimate images, regardless of your relationship status or previous sharing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: SCENARIOS & SCRIPTS -->
+        <section class="section section-gray" id="scenarios">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Real-life Scenarios & Scripts</h2>
+                    <p>Practical scripts help you practice hard conversations so they feel natural in the moment. Below are short examples you can adapt to various situations.</p>
+
+                    <h3>Script: Saying No to Physical Intimacy</h3>
+                    <div class="script-box">
+                        "I care about you, but I'm not comfortable with that right now. I hope you understand."
+                    </div>
+                    <p><strong>Alternative approaches:</strong> "I'm enjoying what we're doing, but I'd like to keep things at this level for now." "I need to take things slower than this."</p>
+
+                    <h3>Script: Asking for Consent</h3>
+                    <div class="script-box">
+                        "Would you like to kiss? If not, that's totally fine—tell me how you feel."
+                    </div>
+                    <p><strong>Alternative approaches:</strong> "I'd really like to kiss you—would that be okay?" "How are you feeling about physical closeness right now?"</p>
+
+                    <h3>Script: Declining to Share Photos</h3>
+                    <div class="script-box">
+                        "I don't share intimate photos. Please respect my boundary. We can still hang out or call."
+                    </div>
+                    <p><strong>Alternative approaches:</strong> "I'm not comfortable sending photos, but I'm happy to [suggest alternative]." "That's not something I do, but I appreciate you asking rather than pressuring."</p>
+
+                    <h3>Scenario: Peer Pressure at a Party</h3>
+                    <div class="scenario-container">
+                        <div class="scenario-title">Situation:</div>
+                        <p>You're at a party and friends are pressuring you to drink more than you're comfortable with or engage in sexual activity.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Strategies:</div>
+                        <ul>
+                            <li>Move to a safe area away from the pressure</li>
+                            <li>Call a trusted friend or family member for support</li>
+                            <li>Use a code word with a friend to signal you need help leaving</li>
+                            <li>Have a prepared excuse: "I have to be up early tomorrow" or "I'm not feeling well"</li>
+                            <li>Trust your instincts—if something feels wrong, it probably is</li>
+                        </ul>
+                    </div>
+
+                    <h3>Scenario: Addressing Uncomfortable Comments</h3>
+                    <div class="scenario-container">
+                        <div class="scenario-title">Situation:</div>
+                        <p>Someone repeatedly makes comments about your body that make you uncomfortable.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Scripts:</div>
+                        <div class="script-box">
+                            "I don't appreciate comments about my body. Please stop."
+                        </div>
+                        <div class="script-box">
+                            "Those kinds of remarks make me uncomfortable. Let's keep our conversation professional/friendly."
+                        </div>
+                        <div class="script-box">
+                            "I've asked you before not to comment on my appearance. If it continues, I'll need to [state consequence]."
+                        </div>
+                    </div>
+
+                    <h3>Scenario: Setting Boundaries with Family</h3>
+                    <div class="scenario-container">
+                        <div class="scenario-title">Situation:</div>
+                        <p>Family members frequently ask intrusive questions about your relationship status or life choices.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Scripts:</div>
+                        <div class="script-box">
+                            "I appreciate your concern, but I prefer to keep those details private."
+                        </div>
+                        <div class="script-box">
+                            "I know you mean well, but I'm not comfortable discussing that topic."
+                        </div>
+                        <div class="script-box">
+                            "Let's talk about something else. How have you been doing?"
+                        </div>
+                    </div>
+
+                    <h3>Scenario: Responding to Digital Boundary Crossings</h3>
+                    <div class="scenario-container">
+                        <div class="scenario-title">Situation:</div>
+                        <p>Someone repeatedly messages you late at night or demands immediate responses.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Scripts:</div>
+                        <div class="script-box">
+                            "I don't respond to messages after 9 PM. I'll get back to you in the morning."
+                        </div>
+                        <div class="script-box">
+                            "I can't always respond immediately, but I will when I'm able."
+                        </div>
+                        <div class="script-box">
+                            "The frequent messages are overwhelming for me. Could we agree on [specific communication boundaries]?"
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Practice Tip:</h4>
+                        <p>Role-play these scenarios with a friend or practice saying the scripts aloud when alone. The more familiar they feel, the more naturally they'll come to you in real situations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: HELP & RESOURCES -->
+        <section class="section section-light" id="resources">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Resources & Help (India-focused)</h2>
+                    <p>If you or someone you know needs immediate assistance, contact local emergency services. For non-emergency support, use the following types of resources:</p>
+
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Public Health Clinics</h4>
+                            <p>Offer STI testing, contraception, and basic counseling services. Often provide sliding scale fees.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>School and College Counselors</h4>
+                            <p>Provide confidential student support and referrals to specialized services.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>NGOs and Helplines</h4>
+                            <p>Many organizations provide support for sexual assault, domestic violence, and adolescent counseling.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Online Counseling Services</h4>
+                            <p>Digital platforms offering remote counseling with trained professionals.</p>
+                        </div>
+                    </div>
+
+                    <h3>How to Find Help</h3>
+                    <p>Search for "adolescent health clinic near me," contact local hospitals, or ask school staff for referrals. Keep a list of trusted contacts and emergency numbers in your phone.</p>
+                    
+                    <h3>Specific Indian Resources</h3>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Service Type</th>
+                                    <th>Organization/Helpline</th>
+                                    <th>Contact Information</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Women's Helpline</td>
+                                    <td>National Commission for Women</td>
+                                    <td>Dial 112 (emergency) or 181 (women's helpline in many states)</td>
+                                </tr>
+                                <tr>
+                                    <td>Child Protection</td>
+                                    <td>Childline India Foundation</td>
+                                    <td>Dial 1098 (24/7 helpline for children in need of care and protection)</td>
+                                </tr>
+                                <tr>
+                                    <td>Mental Health Support</td>
+                                    <td>iCall / Vandrevala Foundation</td>
+                                    <td>iCall: 9152987821; Vandrevala: 18602662345 / 9999666555</td>
+                                </tr>
+                                <tr>
+                                    <td>LGBTQ+ Support</td>
+                                    <td>Naz Foundation / Humsafar Trust</td>
+                                    <td>Check their websites for current helpline numbers and services</td>
+                                </tr>
+                                <tr>
+                                    <td>Legal Aid</td>
+                                    <td>National Legal Services Authority</td>
+                                    <td>Visit their website for state-specific legal aid contacts</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>Important Note:</h4>
+                        <p>Helpline numbers and organizations change — check official government or NGO sites for the latest contacts in your state or city. Services may vary by region.</p>
+                    </div>
+                    
+                    <h3>Creating a Personal Safety Plan</h3>
+                    <p>If you're in an unsafe relationship, consider developing a safety plan:</p>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Identify Safe Contacts</div>
+                        <p>Have 2-3 trusted people you can contact in an emergency. Share your situation with them.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Secure Important Documents</div>
+                        <p>Keep copies of identification, financial records, and important documents in a safe place.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Plan Your Exit</div>
+                        <p>Identify safe places you can go if you need to leave quickly. Keep a bag with essentials if possible.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Use Technology Safely</div>
+                        <p>Clear browser history if researching help options. Use a friend's phone if yours is monitored.</p>
+                    </div>
+                    
+                    <div class="scenario-container">
+                        <div class="scenario-title">Know Emergency Options</div>
+                        <p>Program emergency numbers into your phone. Know the location of nearby police stations or hospitals.</p>
+                    </div>
+                    
+                    <p>Local domestic violence shelters or helplines can help you create a personalized safety plan based on your specific situation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULE: FAQ -->
+        <section class="section section-gray" id="faq">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: At what age is sex legal in India?</div>
+                        <div class="faq-answer">
+                            <p>A: The legal age of consent for sexual activity in India is 18 years. This means that individuals below 18 cannot legally consent to sexual activity, and sexual contact with minors may be considered statutory rape regardless of consent. Laws vary and age-of-consent and related statutes are specific. For legal advice about age or statutory questions, consult a qualified legal professional. If you are under distress or danger, seek immediate support from local authorities or helplines.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: Can I get confidential sexual health services as a teenager?</div>
+                        <div class="faq-answer">
+                            <p>A: Yes — many clinics and NGOs offer confidential counseling and testing to adolescents. In India, the Adolescent Friendly Health Clinics (AFHCs) under the Rashtriya Kishor Swasthya Karyakram (RKSK) program provide confidential services. Ask for "confidential" or "adolescent-friendly" services when you call or visit. Healthcare providers are trained to respect your privacy while providing appropriate care.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: How do I support a friend who experienced abuse?</div>
+                        <div class="faq-answer">
+                            <p>A: Listen without judgment, believe their experience, help them make a safety plan, and connect them to professional help. Don't pressure them to take specific actions; support their choices and safety. Useful phrases include: "I believe you," "This wasn't your fault," and "How can I support you right now?" Encourage them to contact helplines or support services, but respect their pace in seeking help.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: Is it normal to be curious about porn?</div>
+                        <div class="faq-answer">
+                            <p>A: Curiosity about sexuality, including porn, is normal, especially during adolescence when sexual development occurs. Use non-judgmental conversations to explain that porn is entertainment and not a realistic guide to relationships or consent. Recommend trusted educational resources instead. If porn consumption becomes compulsive or interferes with daily life, it may be helpful to speak with a counselor or trusted adult.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: What should I do if I'm being pressured into a relationship?</div>
+                        <div class="faq-answer">
+                            <p>A: You have the right to decide when and if you want to be in a relationship. If you're feeling pressured, clearly state your boundaries: "I'm not ready for a relationship right now," or "I prefer to just be friends." If the pressure continues, limit contact with that person and seek support from trusted friends or adults. Remember that healthy relationships involve mutual interest, not pressure or coercion.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: How can I tell if my relationship is unhealthy?</div>
+                        <div class="faq-answer">
+                            <p>A: Signs of an unhealthy relationship include: feeling afraid, controlled, constantly criticized, isolated from friends and family, pressured into sexual activity, or having your boundaries repeatedly disrespected. Trust your instincts—if something consistently feels wrong in your relationship, it likely is. Speak with a trusted adult or counselor who can help you assess your situation objectively.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: What if I'm not sure about my gender identity or sexual orientation?</div>
+                        <div class="faq-answer">
+                            <p>A: Questioning your gender identity or sexual orientation is a normal part of self-discovery for many people. There's no rush to define yourself—exploration is okay. Seek out accurate information from reliable sources and consider connecting with LGBTQ+ support organizations that can provide resources and community. Speaking with a counselor who has experience with gender and sexuality can also be helpful.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Digital Safety -->
-        <section class="section section-light">
+        <!-- MODULE: ACTION CHECKLISTS -->
+        <section class="section section-light" id="checklists">
             <div class="container">
-                <div class="section-header">
-                    <h2>Digital Safety & Online Relationships</h2>
-                    <p>Navigating relationships in the digital age safely and responsibly</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-img">
-                            💻
-                        </div>
-                        <div class="card-content">
-                            <h3>Online Relationships</h3>
-                            <p>Building and maintaining healthy relationships in digital spaces.</p>
-                            <ul class="card-features">
-                                <li>Setting digital boundaries</li>
-                                <li>Verifying online identities</li>
-                                <li>Safe online communication</li>
-                                <li>Transitioning to in-person meetings</li>
-                            </ul>
+                <div class="content-block">
+                    <h2>Action Checklists</h2>
+
+                    <h3>Checklist for Young People (Safety Basics)</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Know and use correct names for body parts.</strong>
+                            <p>Understanding anatomical terms helps you communicate clearly about health concerns.</p>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-img">
-                            🔒
-                        </div>
-                        <div class="card-content">
-                            <h3>Privacy Protection</h3>
-                            <p>Protecting your personal information and digital privacy.</p>
-                            <ul class="card-features">
-                                <li>Managing social media privacy</li>
-                                <li>Safe sharing of personal information</li>
-                                <li>Recognizing digital red flags</li>
-                                <li>Digital footprint awareness</li>
-                            </ul>
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Practice asking for and giving consent.</strong>
+                            <p>Regular practice makes these conversations feel more natural over time.</p>
                         </div>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-img">
-                            🚨
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Keep personal photos private and never share under pressure.</strong>
+                            <p>Once shared, you lose control over where images might end up.</p>
                         </div>
-                        <div class="card-content">
-                            <h3>Recognizing Digital Abuse</h3>
-                            <p>Identifying and responding to abusive behaviors online.</p>
-                            <ul class="card-features">
-                                <li>Cyberstalking and harassment</li>
-                                <li>Digital control and monitoring</li>
-                                <li>Non-consensual image sharing</li>
-                                <li>Getting help for digital abuse</li>
-                            </ul>
-                            <a href="resources.html" class="btn btn-emergency">Get Help Now</a>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Get tested if sexually active and use condoms consistently.</strong>
+                            <p>Regular STI testing protects your health and your partners' health.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Tell a trusted adult if you feel unsafe.</strong>
+                            <p>Don't keep concerns about relationships to yourself—support is available.</p>
+                        </div>
+                    </div>
+
+                    <h3>Checklist for Parents and Educators</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Start age-appropriate conversations early and keep them ongoing.</strong>
+                            <p>Don't wait for "the big talk"—incorporate these topics into regular conversations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Model respectful communication and boundary-setting.</strong>
+                            <p>Children learn relationship skills by observing the adults in their lives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Provide reliable resources and lesson materials.</strong>
+                            <p>Ensure young people have access to accurate, evidence-based information.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Create clear reporting paths and a supportive environment.</strong>
+                            <p>Make sure young people know who to approach with concerns and feel safe doing so.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Address your own biases and knowledge gaps.</strong>
+                            <p>Continually educate yourself about consent, relationships, and diverse identities.</p>
+                        </div>
+                    </div>
+
+                    <h3>Checklist for Digital Safety</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Use unique passwords and two-factor authentication.</strong>
+                            <p>Protect your accounts from unauthorized access.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Set social accounts to private and review privacy settings.</strong>
+                            <p>Regularly check that your sharing settings match your comfort level.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Do not open suspicious links and report harassment immediately.</strong>
+                            <p>Protect yourself from scams and inappropriate content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Think before posting—consider long-term implications.</strong>
+                            <p>Digital content can have unexpected longevity and reach.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Respect others' digital boundaries.</strong>
+                            <p>Don't pressure for immediate responses or oversharing.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Relationship Scenarios -->
-        <section class="section section-gray">
+        <!-- CONCLUSION & CTA -->
+        <section class="section section-gray" id="closing">
             <div class="container">
-                <div class="section-header">
-                    <h2>Relationship Scenarios & Examples</h2>
-                    <p>Practical examples of applying relationship skills in real situations</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Consent in Action</h3>
-                            <p><strong>Scenario:</strong> Your partner wants to be physically intimate, but you're not ready.</p>
-                            <p><strong>Healthy response:</strong> "I really care about you, but I'm not comfortable with that right now. I need us to wait until I feel ready."</p>
-                            <p><strong>Key points:</strong> Clear communication, setting boundaries, respecting each other's pace.</p>
-                        </div>
+                <div class="content-block">
+                    <h2>Closing Thoughts & Next Steps</h2>
+                    <p>Healthy relationships are built through ongoing practice: asking clearly, listening actively, setting boundaries and taking responsibility for repair. Use the scripts and checklists on this page to practice conversations, prepare classrooms, or support young people. If you'd like printable lesson plans, teacher guides, or a short workshop for your school or NGO, visit our <a href="resources.html">Resources</a> page</p>
+
+                    <p style="margin-top:1rem;"><strong>Remember:</strong> Clear language, respect for autonomy, and a willingness to learn are the simplest and most effective tools for safety and wellbeing.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Your Next Steps:</h4>
+                        <ul>
+                            <li>Bookmark this page for future reference</li>
+                            <li>Share one concept from this guide with someone this week</li>
+                            <li>Practice one communication skill or boundary-setting technique</li>
+                            <li>Save important helpline numbers in your phone</li>
+                            <li>Continue your learning through our other educational resources</li>
+                        </ul>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Conflict Resolution</h3>
-                            <p><strong>Scenario:</strong> You and your partner keep arguing about how much time you spend together.</p>
-                            <p><strong>Healthy approach:</strong> "I notice we've been arguing about our time together. Can we find a schedule that works for both of us?"</p>
-                            <p><strong>Key points:</strong> Addressing the issue calmly, seeking compromise, working together.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Digital Boundaries</h3>
-                            <p><strong>Scenario:</strong> Your partner wants to share passwords and have access to all your messages.</p>
-                            <p><strong>Healthy boundary:</strong> "I value my privacy and believe trust means we don't need to monitor each other's communications."</p>
-                            <p><strong>Key points:</strong> Maintaining individual privacy, building trust without surveillance.</p>
-                        </div>
-                    </div>
+                    <p>Building healthy relationships is a journey, not a destination. Each small step toward better communication, clearer boundaries, and more respectful interactions contributes to your wellbeing and the health of your communities.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Emergency Resources -->
-        <section class="section section-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Need Help Now?</h2>
-                    <p>Immediate support for relationship issues and abuse</p>
-                </div>
-                
-                <div class="card-grid">
-                   
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Relationship Counseling</h3>
-                            <p>Professional support for relationship challenges.</p>
-                            <ul class="card-features">
-                                <li>Couples counseling services</li>
-                                <li>Individual therapy options</li>
-                                <li>Support groups</li>
-                                <li>Online counseling resources</li>
-                            </ul>
-                            <a href="resources.html" class="btn">Find Support</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -401,14 +2053,7 @@
                     </ul>
                 </div>
                 
-                <div class="footer-column">
-                    <h3>Crisis Resources</h3>
-                    <ul class="footer-links">
-                        <li><a href="tel:1-800-656-4673">Sexual Assault Hotline</a></li>
-                        <li><a href="tel:988">Suicide Prevention</a></li>
-                        <li><a href="tel:1-866-488-7386">The Trevor Project</a></li>
-                        <li><a href="tel:1-800-799-7233">Domestic Violence Hotline</a></li>
-                    </ul>
+               
                 </div>
             </div>
             
@@ -421,6 +2066,51 @@
    <script src="js/age-verification.js" defer></script>
 <script src="js/navigation.js" defer></script>
 <script src="js/main.js" defer></script>
+
+<script>
+    // Enhanced FAQ functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Toggle current answer
+                answer.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+        
+        // Initialize all answers as hidden
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+        
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
