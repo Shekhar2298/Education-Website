@@ -4,4 +4,7 @@ Allow: /index.html
 Allow: /css/
 Allow: /js/
 Allow: /images/
+
+
 Sitemap: https://sexeduforall.online/sitemap.xml
+
