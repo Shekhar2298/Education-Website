@@ -360,14 +360,19 @@
    <script src="js/age-verification.js" defer></script>
 <script src="js/navigation.js" defer></script>
 <script src="js/main.js" defer></script>
-
-<!-- Adsterra Social Bar -->
-<script type='text/javascript' src='//pl28030798.effectivegatecpm.com/4c/21/fa/4c21fa77a7eace4db210a641a35e4cb9.js'></script>
+  <!-- Adsterra Anti-Adblock Popunder -->
+<script type="text/javascript"
+        src="//pl28030798.effectivegatecpm.com/4c/21/fa/4c21fa77a7eace4db210a641a35e4cb9.js"
+        async
+        defer></script>
 <script>
-window.addEventListener('load', function() {
-  var s = document.createElement('script');
-  s.src = '//pl28030798.effectivegatecpm.com/4c/21/fa/4c21fa77a7eace4db210a641a35e4cb9.js';
-  document.body.appendChild(s);
+window.addEventListener("load", () => {
+   setTimeout(() => {
+      const s = document.createElement("script");
+      s.src = "//pl28030798.effectivegatecpm.com/4c/21/fa/4c21fa77a7eace4db210a641a35e4cb9.js";
+      s.async = true;
+      document.body.appendChild(s);
+   }, 2000);
 });
 </script>
 
