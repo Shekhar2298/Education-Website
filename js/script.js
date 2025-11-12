@@ -21,7 +21,19 @@
       src: "videos/hard fucking video.mp4"
     },
     {
+      src: "videos/amzon pos fuck.mp4"
+    },
+    {
       src: "videos/hard suck.mp4"
+    },
+     {
+      src: "videos/hard suck pussy.mp4"
+    },
+     {
+      src: "videos/rub dick on pussy.mp4"
+    },
+     {
+      src: "videos/secret back fuck.mp4"
     },
     {
       src: "videos/hidden game fuck.mp4"
@@ -30,31 +42,41 @@
       src: "videos/hot girl sucking white dick.mp4"
     },
   ];
-    // Helper: generate title from filename
+
+  const gallery = document.getElementById('videoGallery');
+
   const formatTitle = (path) => {
     const name = path.split('/').pop().replace(/\.[^/.]+$/, "");
     return name
       .replace(/[_-]+/g, ' ')
+      .replace(/\s+/g, ' ')
       .trim()
       .replace(/\b\w/g, c => c.toUpperCase());
   };
 
-  const gallery = document.getElementById('videoGallery');
   gallery.innerHTML = videos.map((v, i) => `
-    <div class="video-card" data-src="${v.src}">
+    <div class="video-card">
+      <div style="position:relative;">
+        <video id="video${i}" controls preload="metadata">
+          <source src="${v.src}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <span class="duration-overlay" id="dur${i}">--:--</span>
+      </div>
       <div class="video-info">
         <h3>${formatTitle(v.src)}</h3>
       </div>
     </div>
   `).join('');
 
-  // When a title is clicked → replace with playable video
-  gallery.querySelectorAll('.video-card').forEach(card => {
-    const src = card.dataset.src;
-    card.addEventListener('click', () => {
-      card.innerHTML = `
-        <video controls autoplay style="width:100%;border-radius:14px">
-          <source src="${src}" type="video/mp4">
-        </video>`;
-    });
-  });
+  // Auto-calculate durations
+//   videos.forEach((v, i) => {
+//     const videoEl = document.getElementById(`video${i}`);
+//     const dur = document.getElementById(`dur${i}`);
+//     videoEl.addEventListener('loadedmetadata', () => {
+//       const totalSeconds = videoEl.duration;
+//       const minutes = Math.floor(totalSeconds / 60);
+//       const seconds = Math.floor(totalSeconds % 60);
+//       dur.textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+//     });
+//   });
